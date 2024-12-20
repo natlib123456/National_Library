@@ -39,7 +39,22 @@
   <style>
 
 
+
   </style>
+  <script>
+    function showPopup(src) {
+      const popup = document.getElementById("imagePopup");
+      const popupImage = document.getElementById("popupImage");
+      popupImage.src = src;
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      const popup = document.getElementById("imagePopup");
+      popup.style.display = "none";
+    }
+
+  </script>
 </head>
 
 <body class="index-page">
@@ -116,6 +131,22 @@
                 <!-- Repeated Dropdown items removed for brevity -->
               </ul>
             </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
+                <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a></li>
+                <li><a href="./online_collections.html">Online Collections</a></li>
+
+                <!-- Repeated Dropdown items removed for brevity -->
+              </ul>
+            </li>
+
+
+
             <li class="dropdown">
               <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
@@ -131,8 +162,8 @@
               </ul>
             </li>
             <li><a href="./contact_us.html">Contact Us</a></li>
-            <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
-            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li>
+            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
+            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -179,11 +210,13 @@
                 </div>
                 <!-- End Icon Box -->
 
+
+
                 <div class="col-lg-3 d-flex align-items-stretch">
-                  <a href="./gallary.html">
+                  <a href="./events.html">
                     <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                      <i class="bi bi-card-image"></i>
-                      <h4>Gallary</h4>
+                      <i class="bi bi-calendar4-event"></i>
+                      <h4>Events</h4>
                       <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                     </div>
                   </a>
@@ -191,10 +224,10 @@
                 <!-- End Icon Box -->
 
                 <div class="col-lg-3 d-flex align-items-stretch">
-                  <a href="./events.html">
+                  <a href="./membership.html">
                     <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                      <i class="bi bi-calendar4-event"></i>
-                      <h4>Events</h4>
+                      <i class="bi bi-people-fill"></i>
+                      <h4>Membership</h4>
                       <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                     </div>
                   </a>
@@ -214,26 +247,16 @@
     <section id="team" class="team section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2></h2>
-        <!-- <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p> -->
+        <h2>Respected</h2>
       </div>
       <!-- End Section Title -->
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member text-center">
               <div class="member-img">
                 <img src="assets/img/team/Gajendra_Singh_Shekhawat_photo.jpg" class="img-fluid" alt="" />
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
               </div>
               <div class="member-info">
                 <h4>Shri Gajendra Singh Shekhawat</h4>
@@ -243,16 +266,10 @@
           </div>
           <!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member text-center">
               <div class="member-img">
                 <img src="assets/img/team/rao_inderjit_singh.png" class="img-fluid" alt="" />
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
               </div>
               <div class="member-info">
                 <h4>Shri Rao Inderjit Singh</h4>
@@ -262,16 +279,10 @@
           </div>
           <!-- End Team Member -->
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
+          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member text-center">
               <div class="member-img">
                 <img src="assets/img/team/aps_update.png" class="img-fluid" alt="" />
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
               </div>
               <div class="member-info">
                 <h4>Prof. (Dr.) Ajay Pratap Singh</h4>
@@ -280,32 +291,13 @@
             </div>
           </div>
           <!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/Plio.jpg" class="img-fluid" alt="" />
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
-              <div class="member-info">
-                <h4>Dr. Siva Prasad Senapathi</h4>
-                <span>Principal Library & Information Officer</span>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
         </div>
       </div>
     </section>
-    <!-- /Team Section -->
+
 
     <!-- About Section -->
-    <section id="about" class="about section light-background">
+    <section id="about" class="about section ">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
@@ -389,85 +381,17 @@
     </section>
     <!-- /About Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 40
-                  },
-                  "480": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 60
-                  },
-                  "640": {
-                    "slidesPerView": 4,
-                    "spaceBetween": 80
-                  },
-                  "992": {
-                    "slidesPerView": 6,
-                    "spaceBetween": 120
-                  }
-                }
-              }
-            </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/govt.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/gem.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/azadi_logo.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/nkn.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/incredible.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/sangam.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/ndl.png" class="img-fluid" alt="" />
-            </div>
 
-            <!-- <div class="swiper-slide">
-              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="" />
-            </div> -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <!-- /Clients Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>
+        <!-- <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
           consectetur velit
-        </p>
+        </p> -->
       </div>
       <!-- End Section Title -->
 
@@ -793,10 +717,10 @@
     <!-- /Testimonials Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio section light-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
+        <h2>Gallery</h2>
         <p>
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
           consectetur velit
@@ -806,137 +730,72 @@
 
       <div class="container">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
-          </ul>
+          </ul> -->
           <!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
             </div>
             <!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
             </div>
             <!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3"
-                  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
             </div>
             <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
             </div>
             <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="" />
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
             </div>
             <!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid zoom-image" alt="App 1"
+                onclick="showPopup(this.src)" />
+            </div>
+            <!-- End Portfolio Item -->
+          </div>
+          <div id="imagePopup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img class="popup-content" id="popupImage" />
           </div>
           <!-- End Portfolio Container -->
         </div>
@@ -1038,7 +897,7 @@
     <!-- /Pricing Section -->
 
     <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
+    <section id="faq" class="faq section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
@@ -1151,6 +1010,77 @@
     </section>
     <!-- /Faq Section -->
 
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 120
+                  }
+                }
+              }
+            </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/govt.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/gem.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/azadi_logo.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/nkn.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/incredible.png" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/sangam.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/extra_logo/ndl.png" class="img-fluid" alt="" />
+            </div>
+
+            <!-- <div class="swiper-slide">
+              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="" />
+            </div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- /Clients Section -->
+
     <!-- Contact Section -->
     <!-- <section id="contact" class="contact section"> -->
     <!-- Section Title -->
@@ -1252,7 +1182,7 @@
     <!-- </main> -->
 
     <footer id="footer" class="footer light-background">
-      <div class="container footer-top ">
+      <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
@@ -1295,31 +1225,6 @@
               <li><a href="#">Graphic Design</a></li>
             </ul>
           </div>
-
-          <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>
-              Subscribe to our newsletter and receive the latest news about our
-              products and services!
-            </p>
-            <form
-              action="forms/newsletter.php"
-              method="post"
-              class="php-email-form"
-            >
-              <div class="newsletter-form">
-                <input type="email" name="email" /><input
-                  type="submit"
-                  value="Subscribe"
-                />
-              </div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your subscription request has been sent. Thank you!
-              </div>
-            </form>
-          </div> -->
         </div>
       </div>
 
@@ -1330,14 +1235,14 @@
           <span>All Rights Reserved</span>
         </h5>
         <div class="credits">
-          <!-- All the links in the footer should remain intact.
-          You can delete the links only if you've purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+          <!-- Combine the three lines into one -->
+          <p class="combined-text">
+            Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
+          </p>
         </div>
       </div>
     </footer>
+
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
