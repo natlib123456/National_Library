@@ -28,6 +28,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- =======================================================
   * Template Name: Flexor
   * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
@@ -36,9 +37,33 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .disclaimer {
+      margin-top: 20px;
+      color: #020202;
+      /* font-style: italic; */
+      padding: 0 15px;
+    }
 
-
+    .disclaimer span {
+      color: red;
+      font-style: normal;
+      font-weight: bold;
+    }
   </style>
+  <script>
+    function showPopup(src) {
+      const popup = document.getElementById("imagePopup");
+      const popupImage = document.getElementById("popupImage");
+      popupImage.src = src;
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      const popup = document.getElementById("imagePopup");
+      popup.style.display = "none";
+    }
+
+  </script>
 </head>
 
 <body class="index-page">
@@ -52,7 +77,8 @@
             <i class="bi bi-phone d-flex align-items-center ms-4"
               ><span>+1 5589 55488 55</span></i
             > -->
-          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a href="">Screen Reader
+          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a
+              href="./screen_reader_access.html">Screen Reader
               Access</a></i>
           <i class="bi bi-book d-flex align-items-center ms-4"><a href="">English</a><span>|</span><a
               href="">हिंदी</a></i>
@@ -101,7 +127,8 @@
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
                 <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
-                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a>
+                </li>
                 <li><a href="./online_collections.html">Online Collections</a></li>
                 <li><a href="./online journals.html">Online Journals</a></li>
                 <li><a href="./foreign_journals.html">Foreign Journals</a></li>
@@ -114,10 +141,27 @@
                 <!-- Repeated Dropdown items removed for brevity -->
               </ul>
             </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Comitee 1</a></li>
+                <li><a href="./childran_edu_e-resource.html">Comitee 2</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Comitee 3</a></li>
+                <li><a href="./online_collections.html">Comitee 4</a></li>
+
+                <!-- Repeated Dropdown items removed for brevity -->
+              </ul>
+            </li>
+
+
+
             <li class="dropdown">
               <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a></li>
+                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a>
+                </li>
               </ul>
             </li>
             <li class="dropdown">
@@ -129,8 +173,8 @@
               </ul>
             </li>
             <li><a href="./contact_us.html">Contact Us</a></li>
-            <li><a href="#contact" class="login-register" style="color: #212529;">Login</a></li>
-            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #212529;">Register</a></li>
+            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
+            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -139,37 +183,130 @@
 
   </header>
   <!-- Contact Section -->
-  <section id="contact" class="contact section" style="background-color: #ececec;">
+  <section id="services-memberships" class="services-memberships section py-5" style="background-color: #f8f9fa;">
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Services</h2>
+    <div class="container text-center section-title mb-4" data-aos="fade-up">
+      <h2 class="mb-3">Services & Memberships</h2>
+      <p class="text-muted">Explore the various services and membership options offered by the National Library of
+        India.</p>
     </div>
     <!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <!-- Membership Details -->
+          <div class="p-4 mb-4 bg-white rounded shadow">
+            <h3 class="text-secondary">Membership</h3>
+            <p>There are three types of members:</p>
+            <ul>
+              <li><strong>Reading Room Member:</strong> <a href="#">Download Reading Room Rules</a></li>
+              <li><strong>Lending Member:</strong> <a href="#">Download Lending Rules</a></li>
+              <li><strong>Daily Card Member:</strong> <a href="#">Download Lending Form</a></li>
+            </ul>
+            <p><a href="#">Download Admission Form</a></p>
+          </div>
 
+          <!-- Reading Membership -->
+          <div class="p-4 mb-4 bg-white rounded shadow">
+            <h3 class="text-secondary">Reading Membership</h3>
+            <p>The library has separate reading rooms in all the four buildings. Apart from these, each Indian and
+              foreign language division, Foreign Official Documents, Rare books, Maps and Prints, Science and Technology
+              division, and Asutosh Collection are divisions that provide reading facilities. Special seats are provided
+              to accredited scholars in the Main Reading Room.</p>
+            <p>Any person above 18 years can use the reading rooms. An applicant needs to fill a prescribed form with a
+              recommendation. Annual Membership is free. A reader wanting to use the library for a day or two may ask
+              for a daily membership card at the Reading Room. No formal membership is needed for the children to use
+              the Children’s Library.</p>
+          </div>
 
-        <!-- End Contact Form -->
+          <!-- Lending Services -->
+          <div class="p-4 mb-4 bg-white rounded shadow">
+            <h3 class="text-secondary mb-4">Lending Services</h3>
+
+            <h4 class="text-muted">Local Membership</h4>
+            <p>A limited number of books are lent out to readers under certain terms and conditions. To make use of this
+              facility one has to become the member of the Lending division, applying on a prescribed lending form. Two
+              books can be borrowed at a time for a period of 14 days, which can be extended for another 14 days either
+              by phone, or by post or by personal visit. Membership of the Lending division is free, but the borrower
+              has to deposit the amount equal to one and half time of the price of the book. A fine of Re.1/- is charged
+              per book per day for late return. When the borrower wishes to cancel the membership, he/she gets back the
+              money, through a cheque, without any deduction.</p>
+
+            <h4 class="text-muted">Outstation Membership</h4>
+            <p>Outstation members can borrow the books through post. The lending rules of local membership apply to
+              outstation memberships. But postal charges both ways are to be borne by the borrower. The books are sent
+              by V.P.P. for postal charges and the borrower is expected to send them back by registered post only. Books
+              are lent out for a period of 21 days, which can be extended for another 21 days.</p>
+
+            <h4 class="text-muted">Inter Library Loan</h4>
+            <p>Selected libraries of the country and abroad may borrow the books from the National Library through the
+              inter library loan facility. Four books are lent out for a period of 21 days for Indian libraries and two
+              months for foreign libraries. Both ways postage is to be borne by the borrowing library.</p>
+          </div>
+
+          <!-- Bibliographic Services -->
+          <div class="p-4 mb-4 bg-white rounded shadow">
+            <h3 class="text-secondary">Bibliographic Services</h3>
+            <p>Research scholars, Government agencies, universities and national level institutions may make use of this
+              facility. Selected lists of reading materials or bibliographies are prepared by the library on request.
+              Special bibliographies are prepared to augment the exhibitions, which the National Library holds.
+              Compilation of exhaustive bibliographies on special topics are under way. The library provides
+              bibliographies and / or bibliographic statistics to national and international organisations. The library
+              provides support to the Central Reference Library, Kolkata, in compiling the Indian National Bibliography.
+            </p>
+          </div>
+
+          <!-- Reprographic Services -->
+          <div class="p-4 mb-4 bg-white rounded shadow">
+            <h3 class="text-secondary">Reprographic Services</h3>
+            <p>Members of both the reading room and lending division may use reprographic facilities against payment.
+              The photocopies, microfilms and microfilms printout / photocopy will be provided within the limits of the
+              International Copyrights Act.</p>
+          </div>
+
+          <!-- Services for Children -->
+          <div class="p-4 bg-white rounded shadow">
+            <h3 class="text-secondary">Services for Children</h3>
+            <p>The National Library has a separate division for children. Equipped with books in English, Bengali &
+              Hindi languages, the division provides children with reading material for information and fun.</p>
+            <p>No formal membership is required to use this section. Any child can enter the Children’s Library, sign in
+              a register and use the books. Books from the Children’s Library are not lent out. At present the
+              Children’s Library hold about 30,000 books and many periodicals.</p>
+            <p>In an equal time interval, this division organises Juvenile Film shows, different types of competitions
+              like Quiz, Debate etc for school childrens. Creative writing & Story tellings works helps for childrens,
+              organises by this division.</p>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
-  <!-- /Contact Section -->
-  </main>
 
-  <footer id="footer" class="footer footer-background">
-    <div class="container footer-top ">
+
+
+
+
+
+  <!-- /Contact Section -->
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">The National Library</span>
+            <span class="sitename">National Library of India</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Belvedere, Kol;Kolkata</p>
+            <p>West Bengal, 700027, India</p>
             <p class="mt-3">
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+              <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span><br>
+              <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
             </p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p><strong>Email:</strong>
+              <span>dgnl.kol-culture@nic.in</span><br><span>nldirector@rediffmail.com</span>
+            </p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -179,53 +316,53 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <!-- <h3 >Useful Links</h3> -->
+          <span class="sitename">Useful Links</span>
+          <div class="footer-contact pt-3">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Library Catalogue</a></li>
+              <li><a href="#">Digitized Book</a></li>
+              <li><a href="#">RTI</a></li>
+              <li><a href="#">Recruitment Rules & Vacency Position</a></li>
+              <li><a href="#">Tenders</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+        <div class="col-lg-5 col-md-3 footer-about">
+          <!-- <h4>Feedback To Us</h4> -->
 
-        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
-              <h4>Our Newsletter</h4>
-              <p>
-                Subscribe to our newsletter and receive the latest news about our
-                products and services!
-              </p>
-              <form
-                action="forms/newsletter.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="newsletter-form">
-                  <input type="email" name="email" /><input
-                    type="submit"
-                    value="Subscribe"
-                  />
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your subscription request has been sent. Thank you!
-                </div>
-              </form>
-            </div> -->
+          <span class="sitename" style="color: red;">COPYRIGHT & DISCLAIMER:</span>
+          <div class="footer-contact pt-3">
+            <p style="text-align: justify; font-size: 16px; ">No Part of this site can be copied or
+              reproduced in any
+              form, excepting for personal information,
+              without the written permission of the Director General of the National Library, India,
+              Kolkata.
+              While all efforts have been made to make this website as authentic as possible, The National
+              Library
+              authority do not own any responsibility to anybody for any loss or damage, owing to the use
+              of any
+              information caused by any shortcoming, defect or inaccuracy in the information from this web
+              site.</p>
+          </div>
+
+
+        </div>
       </div>
+      <!-- <div class="row disclaimer">
+      <div class="col-md-12">
+        <span>COPYRIGHT & DISCLAIMER: </span>
+        No Part of this site can be copied or reproduced in any form, excepting for personal information, without
+        the written permission of the Director General of the National Library, India, Kolkata (Calcutta).
+        While all efforts have been made to make this website as authentic as possible, The National Library
+        authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
+        information caused by any shortcoming, defect or inaccuracy in the information from this web site.
+      </div>
+    </div> -->
     </div>
 
     <div class="container copyright text-center mt-4">
@@ -235,14 +372,14 @@
         <span>All Rights Reserved</span>
       </h5>
       <div class="credits">
-        <!-- All the links in the footer should remain intact.
-              You can delete the links only if you've purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- Combine the three lines into one -->
+        <p class="combined-text">
+          Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
+        </p>
       </div>
     </div>
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>National Library of India</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon" />
-    <!-- <link href="assets/img/logo.png" rel="apple-touch-icon" /> -->
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>National Library of India</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon" />
+  <!-- <link href="assets/img/logo.png" rel="apple-touch-icon" /> -->
 
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
-    <!-- =======================================================
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- =======================================================
   * Template Name: Flexor
   * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
   * Updated: Jun 27 2024 with Bootstrap v5.3.3
@@ -45,371 +37,365 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
-   
+    .disclaimer {
+      margin-top: 20px;
+      color: #020202;
+      /* font-style: italic; */
+      padding: 0 15px;
+    }
 
+    .disclaimer span {
+      color: red;
+      font-style: normal;
+      font-weight: bold;
+    }
   </style>
-  </head>
+  <script>
+    function showPopup(src) {
+      const popup = document.getElementById("imagePopup");
+      const popupImage = document.getElementById("popupImage");
+      popupImage.src = src;
+      popup.style.display = "block";
+    }
 
-  <body class="index-page">
-    <header id="header" class="header sticky-top">
-      <div class="topbar d-flex align-items-center dark-background">
-        <div
-          class="container d-flex justify-content-center justify-content-md-between"
-        >
-          <div class="contact-info d-flex align-items-center">
-            <!-- <i class="bi bi-envelope d-flex align-items-center"
+    function closePopup() {
+      const popup = document.getElementById("imagePopup");
+      popup.style.display = "none";
+    }
+
+  </script>
+</head>
+
+<body class="index-page">
+  <header id="header" class="header sticky-top">
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <!-- <i class="bi bi-envelope d-flex align-items-center"
               ><a href="mailto:contact@example.com">contact@example.com</a></i
             >
             <i class="bi bi-phone d-flex align-items-center ms-4"
               ><span>+1 5589 55488 55</span></i
             > -->
-            <i
-              class="bi bi-eye d-flex align-items-center"
-              style="padding-left: 20px"
-              ><a href="">Screen Reader Access</a></i
-            >
-            <i class="bi bi-book d-flex align-items-center ms-4"
-              ><a href="">English</a><span>|</span><a href="">हिंदी</a></i
-            >
-          </div>
-          <div class="social-links d-none d-md-flex align-items-center">
-            <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>
-          </div>
+          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a
+              href="./screen_reader_access.html">Screen Reader
+              Access</a></i>
+          <i class="bi bi-book d-flex align-items-center ms-4"><a href="">English</a><span>|</span><a
+              href="">हिंदी</a></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>
         </div>
       </div>
-      <!-- End Top Bar -->
-
-      <div class="branding d-flex align-items-center">
-        <div class="container position-relative d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/logo.png" alt="National Library of India Logo" />
-                <div class="text-content">
-                    <h1 class="sitename">NATIONAL LIBRARY OF INDIA</h1>
-                    <p class="sitetitle">Ministry of Culture, Government of India</p>
-                </div>
-            </a>
-    
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#"><span>About Us</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="./useful_info.html">Useful Information</a></li>
-                            <li><a href="#">Who's Who</a></li>
-                            <li><a href="#">Divisions</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Preservation</a></li>
-                            <li><a href="#">Modernisation</a></li>
-                            <li><a href="#">Administration</a></li>
-                            <li><a href="#">More About National Library</a></li>
-                            <li><a href="#">Exhibition</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#"><span>Resources</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Online Education Resource</a></li>
-                            <li><a href="#">Childrean Educational E-resource</a></li>
-                            <li><a href="#">Journals & Newspapers Under DB Act</a></li>
-                            <li><a href="#">Online Collections</a></li>
-                            <li><a href="#">Online Journals</a></li>
-                            <li><a href="#">Foreign Journals</a></li>
-                            <li><a href="#">Collection</a></li>
-                            <li><a href="#">Collection Devlopment</a></li>
-                            <li><a href="#">Collection Organization</a></li>
-                            <li><a href="#">English & Foreign Languages</a></li>
-                            <li><a href="#">Rare & Other Collections</a></li>
-                            <li><a href="#">Publications</a></li>
-                            <!-- Repeated Dropdown items removed for brevity -->
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Library Catalogue</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#"><span>Digital Collection</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Digitized Documents of National Library</a></li>
-                            <li><a href="#">Electronic Resources</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./contact_us.html">Contact Us</a></li>
-                    <li><a href="#contact" class="login-register" style="color: #212529;">Login</a></li>
-                    <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #212529;">Register</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-        </div>
     </div>
-    
-    </header>
-      <!-- Contact Section -->
-      <section id="contact" class="contact section" style="background-color: #ececec;">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
-        </div>
+    <!-- End Top Bar -->
 
-        <div style="width: 708px;  margin: 0 auto; border:#e06161 4px solid;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14741.47674278458!2d88.33363819613965!3d22.527839026581972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02775b4c0615c9%3A0x37cd81c0c0a20ff2!2sNational%20Library!5e0!3m2!1sen!2sin!4v1609396754242!5m2!1sen!2sin" width="700" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="National Library of India Logo" />
+          <div class="text-content">
+            <h1 class="sitename">NATIONAL LIBRARY OF INDIA</h1>
+            <p class="sitetitle">Ministry of Culture, Government of India</p>
           </div>
-          <div class="clear"></div>
-          <br><br><br><br>
-        <!-- End Section Title -->
+        </a>
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="icon bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <i class="icon bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <i class="icon bi bi-share flex-shrink-0"></i>
-                <div>
-                  <h3>Social Profiles</h3>
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-skype"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-          </div>
-
-          <form
-            action="forms/contact.php"
-            method="post"
-            class="php-email-form"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  placeholder="Your Name"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Your Email"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  placeholder="Subject"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-12">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="6"
-                  placeholder="Message"
-                  required=""
-                ></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your message has been sent. Thank you!
-                </div>
-
-                <button type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
-          <!-- End Contact Form -->
-        </div>
-      </section>
-      <!-- /Contact Section -->
-    </main>
-
-    <footer id="footer" class="footer footer-background">
-        <div class="container footer-top ">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">The National Library</span>
-              </a>
-              <div class="footer-contact pt-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p class="mt-3">
-                  <strong>Phone:</strong> <span>+1 5589 55488 55</span>
-                </p>
-                <p><strong>Email:</strong> <span>info@example.com</span></p>
-              </div>
-              <div class="social-links d-flex mt-4">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-  
-            <div class="col-lg-4 col-md-3 footer-links">
-              <h4>Useful Links</h4>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li class="dropdown">
+              <a href="#"><span>About Us</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
+                <li><a href="./useful_info.html">Useful Information</a></li>
+                <li><a href="./whos_who.html">Who's Who</a></li>
+                <li><a href="./divisions.html">Divisions</a></li>
+                <li><a href="./history.html">History</a></li>
+                <li><a href="./prevention.html">Preservation</a></li>
+                <li><a href="./mordanisation.html">Modernisation</a></li>
+                <li><a href="./administration.html">Administration</a></li>
+                <li><a href="./more_about_nl.html">More About National Library</a></li>
+                <li><a href="./exhibitions.html">Exhibition</a></li>
               </ul>
-            </div>
-  
-            <div class="col-lg-4 col-md-3 footer-links">
-              <h4>Our Services</h4>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>Resources</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Product Management</a></li>
-                <li><a href="#">Marketing</a></li>
-                <li><a href="#">Graphic Design</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
+                <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a>
+                </li>
+                <li><a href="./online_collections.html">Online Collections</a></li>
+                <li><a href="./online journals.html">Online Journals</a></li>
+                <li><a href="./foreign_journals.html">Foreign Journals</a></li>
+                <li><a href="./collection.html">Collection</a></li>
+                <li><a href="./collection_devlopment.html">Collection Devlopment</a></li>
+                <li><a href="./collection_organization.html">Collection Organization</a></li>
+                <li><a href="./english_and _foreign_langs.html">English & Foreign Languages</a></li>
+                <li><a href="./rear_and_other_collections.html">Rare & Other Collections</a></li>
+                <li><a href="./publications.html">Publications</a></li>
+                <!-- Repeated Dropdown items removed for brevity -->
               </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Comitee 1</a></li>
+                <li><a href="./childran_edu_e-resource.html">Comitee 2</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Comitee 3</a></li>
+                <li><a href="./online_collections.html">Comitee 4</a></li>
+
+                <!-- Repeated Dropdown items removed for brevity -->
+              </ul>
+            </li>
+
+
+
+            <li class="dropdown">
+              <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><span>Digital Collection</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="https://indianculture.gov.in/MoCorganization/national-library" target="_blank">Digitized
+                    Documents of National Library</a></li>
+                <li><a href="./e-resources.html">Electronic Resources</a></li>
+              </ul>
+            </li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
+            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <!-- Contact Section -->
+  <section id="contact" class="contact section" style="background-color: #ececec;">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div style="width: 708px;  margin: 0 auto; border:#e06161 4px solid;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14741.47674278458!2d88.33363819613965!3d22.527839026581972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02775b4c0615c9%3A0x37cd81c0c0a20ff2!2sNational%20Library!5e0!3m2!1sen!2sin!4v1609396754242!5m2!1sen!2sin"
+        width="700" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+    <div class="clear"></div>
+    <br><br><br><br>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
-  
-            <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
-              <h4>Our Newsletter</h4>
-              <p>
-                Subscribe to our newsletter and receive the latest news about our
-                products and services!
-              </p>
-              <form
-                action="forms/newsletter.php"
-                method="post"
-                class="php-email-form"
-              >
-                <div class="newsletter-form">
-                  <input type="email" name="email" /><input
-                    type="submit"
-                    value="Subscribe"
-                  />
-                </div>
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Your subscription request has been sent. Thank you!
-                </div>
-              </form>
-            </div> -->
           </div>
         </div>
-  
-        <div class="container copyright text-center mt-4">
-          <h5>
-            © <span>Copyright</span>
-            <strong class="px-1 sitename">The National Library</strong>
-            <span>All Rights Reserved</span>
-          </h5>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact.
-            You can delete the links only if you've purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+            <i class="icon bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
           </div>
         </div>
-      </footer>
-  
-      <!-- Scroll Top -->
-      <a
-        href="#"
-        id="scroll-top"
-        class="scroll-top d-flex align-items-center justify-content-center"
-        ><i class="bi bi-arrow-up-short"></i
-      ></a>
-  
-      <!-- Preloader -->
-      <div id="preloader"></div>
-  
-      <!-- Vendor JS Files -->
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
-      <script src="assets/vendor/aos/aos.js"></script>
-      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-      <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  
-      <!-- Main JS File -->
-      <script src="assets/js/main.js"></script>
-    </body>
-  </html>
-  
+        <!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+            <i class="icon bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Info Item -->
+
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+            <i class="icon bi bi-share flex-shrink-0"></i>
+            <div>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-skype"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Info Item -->
+      </div>
+
+      <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
+          </div>
+
+          <div class="col-md-6">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
+          </div>
+
+          <div class="col-md-12">
+            <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
+          </div>
+
+          <div class="col-md-12">
+            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">
+              Your message has been sent. Thank you!
+            </div>
+
+            <button type="submit">Send Message</button>
+          </div>
+        </div>
+      </form>
+      <!-- End Contact Form -->
+    </div>
+  </section>
+  <!-- /Contact Section -->
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">National Library of India</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Belvedere, Kol;Kolkata</p>
+            <p>West Bengal, 700027, India</p>
+            <p class="mt-3">
+              <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span><br>
+              <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
+            </p>
+            <p><strong>Email:</strong>
+              <span>dgnl.kol-culture@nic.in</span><br><span>nldirector@rediffmail.com</span>
+            </p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <!-- <h3 >Useful Links</h3> -->
+          <span class="sitename">Useful Links</span>
+          <div class="footer-contact pt-3">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Library Catalogue</a></li>
+              <li><a href="#">Digitized Book</a></li>
+              <li><a href="#">RTI</a></li>
+              <li><a href="#">Recruitment Rules & Vacency Position</a></li>
+              <li><a href="#">Tenders</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-3 footer-about">
+          <!-- <h4>Feedback To Us</h4> -->
+
+          <span class="sitename" style="color: red;">COPYRIGHT & DISCLAIMER:</span>
+          <div class="footer-contact pt-3">
+            <p style="text-align: justify; font-size: 16px; ">No Part of this site can be copied or
+              reproduced in any
+              form, excepting for personal information,
+              without the written permission of the Director General of the National Library, India,
+              Kolkata.
+              While all efforts have been made to make this website as authentic as possible, The National
+              Library
+              authority do not own any responsibility to anybody for any loss or damage, owing to the use
+              of any
+              information caused by any shortcoming, defect or inaccuracy in the information from this web
+              site.</p>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- <div class="row disclaimer">
+        <div class="col-md-12">
+          <span>COPYRIGHT & DISCLAIMER: </span>
+          No Part of this site can be copied or reproduced in any form, excepting for personal information, without
+          the written permission of the Director General of the National Library, India, Kolkata (Calcutta).
+          While all efforts have been made to make this website as authentic as possible, The National Library
+          authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
+          information caused by any shortcoming, defect or inaccuracy in the information from this web site.
+        </div>
+      </div> -->
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <h5>
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">The National Library</strong>
+        <span>All Rights Reserved</span>
+      </h5>
+      <div class="credits">
+        <!-- Combine the three lines into one -->
+        <p class="combined-text">
+          Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
