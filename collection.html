@@ -25,9 +25,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- =======================================================
   * Template Name: Flexor
   * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
@@ -36,9 +38,33 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .disclaimer {
+      margin-top: 20px;
+      color: #020202;
+      /* font-style: italic; */
+      padding: 0 15px;
+    }
 
-
+    .disclaimer span {
+      color: red;
+      font-style: normal;
+      font-weight: bold;
+    }
   </style>
+  <script>
+    function showPopup(src) {
+      const popup = document.getElementById("imagePopup");
+      const popupImage = document.getElementById("popupImage");
+      popupImage.src = src;
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      const popup = document.getElementById("imagePopup");
+      popup.style.display = "none";
+    }
+
+  </script>
 </head>
 
 <body class="index-page">
@@ -52,7 +78,8 @@
             <i class="bi bi-phone d-flex align-items-center ms-4"
               ><span>+1 5589 55488 55</span></i
             > -->
-          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a href="">Screen Reader
+          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a
+              href="./screen_reader_access.html">Screen Reader
               Access</a></i>
           <i class="bi bi-book d-flex align-items-center ms-4"><a href="">English</a><span>|</span><a
               href="">हिंदी</a></i>
@@ -101,7 +128,8 @@
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
                 <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
-                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a>
+                </li>
                 <li><a href="./online_collections.html">Online Collections</a></li>
                 <li><a href="./online journals.html">Online Journals</a></li>
                 <li><a href="./foreign_journals.html">Foreign Journals</a></li>
@@ -114,10 +142,27 @@
                 <!-- Repeated Dropdown items removed for brevity -->
               </ul>
             </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Comitee 1</a></li>
+                <li><a href="./childran_edu_e-resource.html">Comitee 2</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Comitee 3</a></li>
+                <li><a href="./online_collections.html">Comitee 4</a></li>
+
+                <!-- Repeated Dropdown items removed for brevity -->
+              </ul>
+            </li>
+
+
+
             <li class="dropdown">
               <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a></li>
+                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a>
+                </li>
               </ul>
             </li>
             <li class="dropdown">
@@ -129,8 +174,8 @@
               </ul>
             </li>
             <li><a href="./contact_us.html">Contact Us</a></li>
-            <li><a href="#contact" class="login-register" style="color: #212529;">Login</a></li>
-            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #212529;">Register</a></li>
+            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
+            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -139,37 +184,118 @@
 
   </header>
   <!-- Contact Section -->
-  <section id="contact" class="contact section" style="background-color: #ececec;">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Indian Languages Collections</h2>
-    </div>
-    <!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4">
+  <!-- Contact Section -->
 
 
-        <!-- End Contact Form -->
+
+  <section id="library-guide" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="mb-3">Indian Languages Collection</h2>
+        <p class="text-muted">
+          The National Library receives books and periodicals in almost all Indian languages under the Delivery of Books and Newspapers (Public Libraries) Act 1954 (D.B. Act).
+        </p>
       </div>
-  </section>
-  <!-- /Contact Section -->
-  </main>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Assamese Language Collection</h3>
+          <p>In 1963, a separate division was established in the National Library to collect and process Assamese books. Currently, the division has 18,913 books, including rare works published between 1840 and 1900.</p>
+        </div>
 
-  <footer id="footer" class="footer footer-background">
-    <div class="container footer-top ">
+        <div class="col-md-12">
+          <h3>Bengali Language Collection</h3>
+          <p>The library has more than 1 lakh books in its Bengali collection, including rare manuscripts, periodicals, and first editions of Rabindranath Tagore’s works.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Gujarati Language Collection</h3>
+          <p>The Gujarati division, established in the sixties, now holds 44,793 books, including significant literary and religious texts.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Hindi Language Division</h3>
+          <p>The Hindi division, established in 1960, has 1,66,544 books, including rare works from the late 18th century.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Kannada Language Collection</h3>
+          <p>Formed in 1963, the Kannada division currently has around 53,000 books and includes rare works of Veerashaiva literature.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Kashmiri Language Collection</h3>
+          <p>Established in 1983, the Kashmiri section contains significant literary works, but current acquisitions remain unprocessed due to staff shortages.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Malayalam Language Collection</h3>
+          <p>With around 47,977 books, the Malayalam division has works dating back to 1791, including early grammar books and dictionaries.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Marathi Language Collection</h3>
+          <p>Started in 1963, the Marathi division now has 55,588 books, including historical texts on the Marathas.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Oriya Language Collection</h3>
+          <p>Established in 1973, the Oriya division contains 49,645 books, with publications dating back to 1831.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Punjabi Language Collection</h3>
+          <p>Established in 1974, the Punjabi collection contains 23,729 books, including rare dictionaries and historical accounts.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Sanskrit, Pali, and Prakrit Languages Collection</h3>
+          <p>The Sanskrit division has over 12,228 books, along with significant collections of Pali and Prakrit literature.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Sindhi Language Collection</h3>
+          <p>Established in 1957, the Sindhi collection consists of 2,100 books, including rare literary works.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Tamil Language Collection</h3>
+          <p>The Tamil division, formed in 1963, currently holds 1,12,847 books, including early printed Tamil books and manuscripts.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Telugu Language Collection</h3>
+          <p>Established in 1963, the Telugu division holds 46,500 books, including rare 19th-century publications.</p>
+        </div>
+
+        <div class="col-md-12">
+          <h3>Urdu Language Collection</h3>
+          <p>Formed in 1968, the Urdu division contains 30,000 books, including rare and historic manuscripts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">The National Library</span>
+            <span class="sitename">National Library of India</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Belvedere, Kol;Kolkata</p>
+            <p>West Bengal, 700027, India</p>
             <p class="mt-3">
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+              <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span><br>
+              <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
             </p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p><strong>Email:</strong>
+              <span>dgnl.kol-culture@nic.in</span><br><span>nldirector@rediffmail.com</span>
+            </p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -179,30 +305,53 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <!-- <h3 >Useful Links</h3> -->
+          <span class="sitename">Useful Links</span>
+          <div class="footer-contact pt-3">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Library Catalogue</a></li>
+              <li><a href="#">Digitized Book</a></li>
+              <li><a href="#">RTI</a></li>
+              <li><a href="#">Recruitment Rules & Vacency Position</a></li>
+              <li><a href="#">Tenders</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+        <div class="col-lg-5 col-md-3 footer-about">
+          <!-- <h4>Feedback To Us</h4> -->
 
-        
+          <span class="sitename" style="color: red;">COPYRIGHT & DISCLAIMER:</span>
+          <div class="footer-contact pt-3">
+            <p style="text-align: justify; font-size: 16px; ">No Part of this site can be copied or
+              reproduced in any
+              form, excepting for personal information,
+              without the written permission of the Director General of the National Library, India,
+              Kolkata.
+              While all efforts have been made to make this website as authentic as possible, The National
+              Library
+              authority do not own any responsibility to anybody for any loss or damage, owing to the use
+              of any
+              information caused by any shortcoming, defect or inaccuracy in the information from this web
+              site.</p>
+          </div>
+
+
+        </div>
       </div>
+      <!-- <div class="row disclaimer">
+    <div class="col-md-12">
+      <span>COPYRIGHT & DISCLAIMER: </span>
+      No Part of this site can be copied or reproduced in any form, excepting for personal information, without
+      the written permission of the Director General of the National Library, India, Kolkata (Calcutta).
+      While all efforts have been made to make this website as authentic as possible, The National Library
+      authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
+      information caused by any shortcoming, defect or inaccuracy in the information from this web site.
+    </div>
+  </div> -->
     </div>
 
     <div class="container copyright text-center mt-4">
@@ -212,14 +361,14 @@
         <span>All Rights Reserved</span>
       </h5>
       <div class="credits">
-        <!-- All the links in the footer should remain intact.
-              You can delete the links only if you've purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: [buy-url]
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- Combine the three lines into one -->
+        <p class="combined-text">
+          Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
+        </p>
       </div>
     </div>
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -239,6 +388,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
