@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +25,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- =======================================================
   * Template Name: Flexor
   * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
@@ -37,9 +38,33 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .disclaimer {
+      margin-top: 20px;
+      color: #020202;
+      /* font-style: italic; */
+      padding: 0 15px;
+    }
 
-
+    .disclaimer span {
+      color: red;
+      font-style: normal;
+      font-weight: bold;
+    }
   </style>
+  <script>
+    function showPopup(src) {
+      const popup = document.getElementById("imagePopup");
+      const popupImage = document.getElementById("popupImage");
+      popupImage.src = src;
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      const popup = document.getElementById("imagePopup");
+      popup.style.display = "none";
+    }
+
+  </script>
 </head>
 
 <body class="index-page">
@@ -53,7 +78,8 @@
             <i class="bi bi-phone d-flex align-items-center ms-4"
               ><span>+1 5589 55488 55</span></i
             > -->
-          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a href="">Screen Reader
+          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a
+              href="./screen_reader_access.html">Screen Reader
               Access</a></i>
           <i class="bi bi-book d-flex align-items-center ms-4"><a href="">English</a><span>|</span><a
               href="">हिंदी</a></i>
@@ -102,7 +128,8 @@
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
                 <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
-                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a>
+                </li>
                 <li><a href="./online_collections.html">Online Collections</a></li>
                 <li><a href="./online journals.html">Online Journals</a></li>
                 <li><a href="./foreign_journals.html">Foreign Journals</a></li>
@@ -115,10 +142,27 @@
                 <!-- Repeated Dropdown items removed for brevity -->
               </ul>
             </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Comitee 1</a></li>
+                <li><a href="./childran_edu_e-resource.html">Comitee 2</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Comitee 3</a></li>
+                <li><a href="./online_collections.html">Comitee 4</a></li>
+
+                <!-- Repeated Dropdown items removed for brevity -->
+              </ul>
+            </li>
+
+
+
             <li class="dropdown">
               <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a></li>
+                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a>
+                </li>
               </ul>
             </li>
             <li class="dropdown">
@@ -130,8 +174,8 @@
               </ul>
             </li>
             <li><a href="./contact_us.html">Contact Us</a></li>
-            <li><a href="#contact" class="login-register" style="color: #212529;">Login</a></li>
-            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #212529;">Register</a></li>
+            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
+            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -140,37 +184,202 @@
 
   </header>
   <!-- Contact Section -->
-  <section id="contact" class="contact section" style="background-color: #ececec;">
+  <!-- Contact Section -->
+
+
+
+  <section id="rare-collections" class="rare-collections section py-5" style="background-color: #f8f9fa;">
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Rare And Other Collections</h2>
+    <div class="container text-center section-title mb-4" data-aos="fade-up">
+      <h2 class="mb-3">Rare and Other Collections</h2>
+      <p class="text-muted">Explore the National Library's collection of rare books, manuscripts, official documents,
+        and more.</p>
     </div>
     <!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <!-- Rare Books -->
+          <div class="p-4 rounded shadow mb-4 bg-white">
+            <h3 class="text-secondary">Rare Books</h3>
+            <p>The National Library has an impressive number of rare books and other reading materials.With the
+              recommendations of the Review Committee, the present Rare Books Division started functioning as a separate
+              division in December, 1973 under the charge of an Assistant Library & Information Officer after shifting
+              of Rare Books Division to its new premises on Bhasha Bhavan Basement, National Library Kolkata from 1st
+              February, 2013. At present the books published prior to 1860 are considered rare books, along with limited
+              and first editions, books distinguished by their design, illustration or history, and a few other
+              criteria. Along with rare books, manuscripts and microfilms of the library are also stacked in this
+              division.</p>
+            <p>The division also provides reading facilities to the users who wish to consult these items. At present
+              the division has 6,489 monographs, 6,623 manuscripts.</p>
+            <p>Total holding of Rare Book Division are as follows as on 30-06-2018.</p>
+            <p>Manuscripts <a href="">(Click here for List of Manuscripts)</a></p>
+            <p>Printed old Rare Materials(Typographical mistake rectification is going on). <a href="">Click here</a>
+            </p>
+            <p><a href="">List of Personal Diaries of Prof. Nirmal Kumar Basu available in the Library.</a></p>
+            <!-- <ul>
+              <li><strong>Monographs:</strong> 6,489</li>
+              <li><strong>Manuscripts:</strong> 6,623</li>
+            </ul> -->
+            <p>National Library has about 3600 rare and historically important manuscripts in different languages. These
+              manuscripts are preserved separately along with other important and rare books in the Rare Books division.
+              The xylographs presented by H. E. the Dalai Lama are also preserved in this collection.
 
+            </p>
+          </div>
 
-        <!-- End Contact Form -->
+          <!-- Science and Technology Collection -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fcfcfc;">
+            <h3 class="text-secondary">Science and Technology Collection</h3>
+            <p>It is important to note that three committees in their reports “unanimously recommended the need of
+              setting up of a well balanced science library in the National Library, Calcutta. The Science and
+              Technology Division of the National Library were set up in April, 1972 in the ground floor of the Annexe
+              Reading Room in accordance with the recommendation of the reviewing committee as well as of the Kamath
+              committee. The committee of management headed by Prof. Niharranjan Ray as the Chairman was formed by the
+              Government of India in October 1975 to advice the Department of Culture and the Acting librarian of the
+              National Library regarding the functioning of the Library. This committee reviewed the acquisition policy
+              of the of the library in the areas of science and technology and suggested that “since the National
+              Library was not a specialized library, the library should not acquire highly specialized books in any
+              branch of science and technology, which were being acquired by various other institutions but should
+              concentrates on the following areas:</p>
+            <!-- <p>Current collection includes:</p> -->
+            <ul>
+              <li><strong>History of Science and Technology</strong> </li>
+              <li><strong>Philosophy of Science</strong> </li>
+              <li><strong>Science and Society</strong></li>
+              <li><strong>Science Culture and Civilization</strong></li>
+              <li><strong>Scientific Research Policy and Environmental Pollution</strong></li>
+              <li><strong>General Science Books and History of Invention</strong></li>
+            </ul>
+            <p>With accordance with the love for education and research, Science and Technology Division has been
+              shifted from Annexe building to Bhasha Bhavan, 1st floor on 05/04/2010. Scientist, Engineers, Doctor,
+              Entrepreneurs, Scholars, Students are the common readers of this division and they use reading room for
+              study and research purpose. Eminent scholars who are not attached to any university or any research
+              institute frequently visit this division for consultation of their research work. Science and Technology
+              Division is the only place in the National Library which provides open access to its collection and users
+              have freedom to brows its collection on the shelves directly of their research purpose. It maintains
+              Author and Title catalogue and Subject catalogue, besides manual catalogue users can access online
+              catalogue. Presently 17,000 reference books (approx) covering all subjects on Science and Technology and
+              400 titles of Indian and Foreign Science and Technological journals have been kept in the division for
+              readers service. This division also provides internet services with Wi-Fi facility. Online journals and
+              online books can be seen and use in the division. The division prepares bibliographies for the users and
+              demand, makes searches for scientific and technical queries, replies IFLA and other organizational queries
+              and organizes exhibitions etc.</p>
+          </div>
+
+          <!-- Indian Official Documents -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fdfdfd;">
+            <h3 class="text-secondary">Indian Official Documents</h3>
+            <p>The collection of Indian Official documents division (IOD) of the National Library is, perhaps, the
+              single largest most organized accumulation of government publications in the country. The collection is
+              very rich and inclusive of both past and present. The collection ranges from the 18th Century from the
+              days of the East India Company. It contains administrative reports, financial reports, reports on public
+              health services, census reports, gazetteers, gazettes, legislative proceedings and so forth.</p>
+            <p>The division is located at the first floor of the Annexe Building and works as an independent composite
+              unit since mid 70s. It is responsible for acquisition of government publications, their management,
+              organisation and maintenance. The division receives official documents published by the Government of
+              India, State Governments, Local Bodies, Legislatures, Public Undertakings, Banks, Government Institutions
+              and Autonomous Bodies funded by the Central, State and Local Governments under the Delivery of Books Act.
+              Limited readers’ service is also rendered by the division.</p>
+            <p>Machine readable cataloguing and automated serial control in MARC format are major achievements of the
+              division in recent times. Bibliographic information of these documents is available in the website of the
+              library. Few thousand old records of the collection have already been digitized and are available to the
+              users with the library campus through intranet. Presently, the work of management and organizations of
+              electronic Government Documents has been undertaken by the division.</p>
+            <p>Current collection:</p>
+            <ul>
+              <li><strong>Books, Journals, Gazettes:</strong> 166,839</li>
+              <li><strong>Un-accessioned Materials:</strong> 50,000 (Approx)</li>
+            </ul>
+          </div>
+
+          <!-- Foreign Official Documents -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fafafa;">
+            <h3 class="text-secondary">Foreign Official Documents</h3>
+            <p>The National Library is one of the repository libraries for United Nations Organisation and its agencies.
+              Thus all the publications of UNO and its agencies are received by the library free of cost. These
+              documents are processed and stacked separately. The library also receives publications of the governments
+              of the United States of America, Great Britain, Canada, the Commonwealth nations, and the publications of
+              the European Economic Committee. Almost all the volumes of the sessional sets of British Parliamentary
+              papers since the beginning of the 19th century are available.</p>
+            <p>Current collection:</p>
+            <ul>
+              <li><strong>Accessioned Books:</strong> 199,204</li>
+              <li><strong>Unprocessed Books & Periodicals:</strong> 300,000 (Approx)</li>
+            </ul>
+          </div>
+
+          <!-- Newspapers and Periodicals -->
+          <div class="p-4 rounded shadow mb-4 bg-white">
+            <h3 class="text-secondary">Newspapers and Periodicals</h3>
+            <a href="">
+              <p>(Click here for the list of Foreign Journals & Newspapers subscribed on renewal basis for the year
+                2015)</p>
+            </a>
+            <p>All the newspapers and periodicals in Indian languages are received and processed in their respective
+              language divisions. But English newspapers and periodicals, both the Indian and foreign, are acquired and
+              processed separately. A separate Serials division is responsible for acquiring and processing of English
+              newspapers and periodicals. The library has a rich collection of late 19th and early 20th century
+              newspapers and periodicals, but almost all of them are incomplete sets. There are catalogues for
+              periodicals, newspapers and gazettes available in the library up to 1953.</p>
+          </div>
+
+          <!-- Maps and Prints -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fcfcfc;">
+            <h3 class="text-secondary">Maps and Prints</h3>
+            <p>This is the only full-fledged map library in the country with a very rich collection of old and rare maps
+              and atlases. This division is located in the ground floor of the Annexe Building where it started
+              functioning from mid 60s’ as an independent entity. The division is responsible for collection building of
+              maps and atlases, their management and conservation. It renders services to the individuals as well as to
+              the institutions. Cataloguing is done in machine readable format and is available in the website of the
+              library.</p>
+            <p>Current collection:</p>
+            <ul>
+              <li><strong>Maps and Atlases:</strong> 55,000</li>
+              <li><strong>Un-accessioned & Duplicate Maps:</strong> 33,000(Approx)</li>
+            </ul>
+          </div>
+
+          <!-- Microforms -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fdfdfd;">
+            <h3 class="text-secondary">Microforms</h3>
+            <p>The library has preserved valuable documents in microfilm and microfiche formats, including the Census of
+              India (1872-1951).</p>
+            <p>Current collection:</p>
+            <ul>
+              <li><strong>Microfilms:</strong> 6,801 rolls</li>
+              <li><strong>Microfiches:</strong> 18,422</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
-  <!-- /Contact Section -->
-  </main>
 
-  <footer id="footer" class="footer footer-background">
-    <div class="container footer-top ">
+
+
+
+
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">The National Library</span>
+            <span class="sitename">National Library of India</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Belvedere, Kol;Kolkata</p>
+            <p>West Bengal, 700027, India</p>
             <p class="mt-3">
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+              <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span><br>
+              <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
             </p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p><strong>Email:</strong>
+              <span>dgnl.kol-culture@nic.in</span><br><span>nldirector@rediffmail.com</span>
+            </p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -180,30 +389,53 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <!-- <h3 >Useful Links</h3> -->
+          <span class="sitename">Useful Links</span>
+          <div class="footer-contact pt-3">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Library Catalogue</a></li>
+              <li><a href="#">Digitized Book</a></li>
+              <li><a href="#">RTI</a></li>
+              <li><a href="#">Recruitment Rules & Vacency Position</a></li>
+              <li><a href="#">Tenders</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+        <div class="col-lg-5 col-md-3 footer-about">
+          <!-- <h4>Feedback To Us</h4> -->
 
-        
+          <span class="sitename" style="color: red;">COPYRIGHT & DISCLAIMER:</span>
+          <div class="footer-contact pt-3">
+            <p style="text-align: justify; font-size: 16px; ">No Part of this site can be copied or
+              reproduced in any
+              form, excepting for personal information,
+              without the written permission of the Director General of the National Library, India,
+              Kolkata.
+              While all efforts have been made to make this website as authentic as possible, The National
+              Library
+              authority do not own any responsibility to anybody for any loss or damage, owing to the use
+              of any
+              information caused by any shortcoming, defect or inaccuracy in the information from this web
+              site.</p>
+          </div>
+
+
+        </div>
       </div>
+      <!-- <div class="row disclaimer">
+    <div class="col-md-12">
+      <span>COPYRIGHT & DISCLAIMER: </span>
+      No Part of this site can be copied or reproduced in any form, excepting for personal information, without
+      the written permission of the Director General of the National Library, India, Kolkata (Calcutta).
+      While all efforts have been made to make this website as authentic as possible, The National Library
+      authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
+      information caused by any shortcoming, defect or inaccuracy in the information from this web site.
+    </div>
+  </div> -->
     </div>
 
     <div class="container copyright text-center mt-4">
@@ -213,14 +445,14 @@
         <span>All Rights Reserved</span>
       </h5>
       <div class="credits">
-        <!-- All the links in the footer should remain intact.
-              You can delete the links only if you've purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: [buy-url]
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- Combine the three lines into one -->
+        <p class="combined-text">
+          Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
+        </p>
       </div>
     </div>
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -240,6 +472,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

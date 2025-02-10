@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,9 +25,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- =======================================================
   * Template Name: Flexor
   * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
@@ -37,9 +38,33 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .disclaimer {
+      margin-top: 20px;
+      color: #020202;
+      /* font-style: italic; */
+      padding: 0 15px;
+    }
 
-
+    .disclaimer span {
+      color: red;
+      font-style: normal;
+      font-weight: bold;
+    }
   </style>
+  <script>
+    function showPopup(src) {
+      const popup = document.getElementById("imagePopup");
+      const popupImage = document.getElementById("popupImage");
+      popupImage.src = src;
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      const popup = document.getElementById("imagePopup");
+      popup.style.display = "none";
+    }
+
+  </script>
 </head>
 
 <body class="index-page">
@@ -53,7 +78,8 @@
             <i class="bi bi-phone d-flex align-items-center ms-4"
               ><span>+1 5589 55488 55</span></i
             > -->
-          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a href="">Screen Reader
+          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a
+              href="./screen_reader_access.html">Screen Reader
               Access</a></i>
           <i class="bi bi-book d-flex align-items-center ms-4"><a href="">English</a><span>|</span><a
               href="">हिंदी</a></i>
@@ -102,7 +128,8 @@
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
                 <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
-                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a>
+                </li>
                 <li><a href="./online_collections.html">Online Collections</a></li>
                 <li><a href="./online journals.html">Online Journals</a></li>
                 <li><a href="./foreign_journals.html">Foreign Journals</a></li>
@@ -115,10 +142,27 @@
                 <!-- Repeated Dropdown items removed for brevity -->
               </ul>
             </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./online_edu_resource.html">Comitee 1</a></li>
+                <li><a href="./childran_edu_e-resource.html">Comitee 2</a></li>
+                <li><a href="./jounals_and_news_un_db_act.html">Comitee 3</a></li>
+                <li><a href="./online_collections.html">Comitee 4</a></li>
+
+                <!-- Repeated Dropdown items removed for brevity -->
+              </ul>
+            </li>
+
+
+
             <li class="dropdown">
               <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a></li>
+                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a>
+                </li>
               </ul>
             </li>
             <li class="dropdown">
@@ -130,8 +174,8 @@
               </ul>
             </li>
             <li><a href="./contact_us.html">Contact Us</a></li>
-            <li><a href="#contact" class="login-register" style="color: #212529;">Login</a></li>
-            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #212529;">Register</a></li>
+            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
+            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -140,37 +184,144 @@
 
   </header>
   <!-- Contact Section -->
-  <section id="contact" class="contact section" style="background-color: #ececec;">
+  <!-- Contact Section -->
+
+
+
+  <section id="rare-collections" class="rare-collections section py-5" style="background-color: #f8f9fa;">
     <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>English And Foreign Languages</h2>
+    <div class="container text-center section-title mb-4" data-aos="fade-up">
+      <h2 class="mb-3">English and Foreign Languages</h2>
+      <p class="text-muted">Explore the National Library's collection of English, Foreign Languages, and more.</p>
     </div>
     <!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <!-- Rare Books -->
+          <div class="p-4 rounded shadow mb-4 bg-white">
+            <h3 class="text-secondary">English Language Collection</h3>
+            <p>The National Library has an invaluable collection of books in the English language, because of the
+              systematic development by Calcutta Public Library and the Imperial Library. Way back in 1848, an attempt
+              was made to acquire journals issued by the foreign learned institutions. Serious works were purchased in
+              larger numbers than light literature. The same policy has been pursued in recent times.</p>
+            <p>Although the library has English books and other reading materials in almost all subjects, the collection
+              is especially rich in the humanities, British and Indian history and literature</p>
+          </div>
 
+          <!-- Science and Technology Collection -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fcfcfc;">
+            <h3 class="text-secondary">Foreign Languages Collections</h3>
+            <p>One of the aims of the National Library is to collect all the books published on India, anywhere in the
+              world and in any language. At the same time it collects reading materials on other subjects in different
+              languages for the use of the country.</p>
+            <p>The Imperial Library had a good number of Arabic and Persian works and a few other foreign language
+              books. In 1985 the European Languages Division was reorganized and five separate divisions were formed.
+              These are East Asian Languages Division, Germanic Languages Division, Romance Languages Division, Slavonic
+              Languages Division,West Asian and African Languages Division.</p>
 
-        <!-- End Contact Form -->
+            <p>The foreign language works are mainly acquired through purchase, gift and exchange. The divisions
+              mentioned are responsible for collection development, collection organisation and information
+              dissemination to the readers in the respective languages. They also maintain their own stacks and provide
+              reading facilities.</p>
+
+          </div>
+
+          <!-- Indian Official Documents -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fdfdfd;">
+            <h3 class="text-secondary">East Asian Languages Collection</h3>
+            <p>A separate division collects, processes and preserves Chinese and other East Asian languages. At present
+              the collection has 15,000 Chinese books and one thousand each in Japanese, Korean, Tibetan, Nepali and
+              Thai languages.</p>
+          </div>
+
+          <!-- Foreign Official Documents -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fafafa;">
+            <h3 class="text-secondary">Germanic Languages Collection</h3>
+            <p>The Germanic Languages division was formed in the library in the year 1985. The division has books in
+              German, Dutch, Norwegian, and Swedish. But the largest number of books is in German. The division has book
+              exchange agreements with seven Germanic language-speaking countries.</p>
+            <p>Berliner Zeitung, a newspaper published from former East Germany is available in this collection.</p>
+          </div>
+
+          <!-- Newspapers and Periodicals -->
+          <!-- <div class="p-4 rounded shadow mb-4 bg-white">
+            <h3 class="text-secondary">Newspapers and Periodicals</h3>
+            <a href="">
+              <p>(Click here for the list of Foreign Journals & Newspapers subscribed on renewal basis for the year
+                2015)</p>
+            </a>
+            <p>All the newspapers and periodicals in Indian languages are received and processed in their respective
+              language divisions. But English newspapers and periodicals, both the Indian and foreign, are acquired and
+              processed separately. A separate Serials division is responsible for acquiring and processing of English
+              newspapers and periodicals. The library has a rich collection of late 19th and early 20th century
+              newspapers and periodicals, but almost all of them are incomplete sets. There are catalogues for
+              periodicals, newspapers and gazettes available in the library up to 1953.</p>
+          </div> -->
+
+          <!-- Maps and Prints -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fcfcfc;">
+            <h3 class="text-secondary">Romance Languages Collection</h3>
+            <p>Romance Languages division came into existence in 1985, along with other foreign languages divisions.
+              Although the collection includes books and other materials in languages belonging to the Romance group,
+              the largest number of books is in French, about 5000. About 2000 Romanian and a handful of books in
+              Italian and Spanish are also available.</p>
+
+          </div>
+
+          <!-- Microforms -->
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fdfdfd;">
+            <h3 class="text-secondary">Slavonic Languages Collection</h3>
+            <p>The collection has books in Slavonic languages, spoken in Russia, Poland, Bulgaria, the Czech Republic,
+              Slovakia, former Yugoslavia and other countries and peoples of the region. It deals with reading materials
+              in 28 languages. But the largest collection is in the Russian language. At present the division has 65,000
+              books.</p>
+
+          </div>
+          <div class="p-4 rounded shadow mb-4" style="background-color: #fcfcfc;">
+            <h3 class="text-secondary">West Asian and African Languages Collection</h3>
+            <p>The Buhar Library may be considered the nucleus of West Asian and African languages collection. The
+              division has a handful of books in other West Asian languages such as Turkish, Pashto. The largest number
+              of books and journals are in Persian and Arabic, approximately 10,000 in Arabic and 10,000 in Persian. The
+              collection includes the lexicons compiled and prepared by Indians authors of the past and edited by the
+              ‘native’ scholars of the College of Fort William and European orientalists of the said college. The
+              division also holds a large numbers of historical works published under the Bibliotheca Indica series of
+              the Asiatic Society of Bengal in the 19th century.</p>
+            <p>A large number of Arabic and Persian books and manuscripts can also be found in Hidayat Husain
+              Collection, Zakaria Collection, Imambara Collection and M.Z. Siddiqi Collection. Sir Jadunath Sarkar
+              Collection also has 200 Persian manuscripts. These manuscripts relate mainly to the later Mughal period
+              (1659-1837) and the early years of British rule.</p>
+
+          </div>
+        </div>
       </div>
+    </div>
   </section>
-  <!-- /Contact Section -->
-  </main>
 
-  <footer id="footer" class="footer footer-background">
-    <div class="container footer-top ">
+
+
+
+
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">The National Library</span>
+            <span class="sitename">National Library of India</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Belvedere, Kol;Kolkata</p>
+            <p>West Bengal, 700027, India</p>
             <p class="mt-3">
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+              <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span><br>
+              <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
             </p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p><strong>Email:</strong>
+              <span>dgnl.kol-culture@nic.in</span><br><span>nldirector@rediffmail.com</span>
+            </p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -180,30 +331,53 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <!-- <h3 >Useful Links</h3> -->
+          <span class="sitename">Useful Links</span>
+          <div class="footer-contact pt-3">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Library Catalogue</a></li>
+              <li><a href="#">Digitized Book</a></li>
+              <li><a href="#">RTI</a></li>
+              <li><a href="#">Recruitment Rules & Vacency Position</a></li>
+              <li><a href="#">Tenders</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+        <div class="col-lg-5 col-md-3 footer-about">
+          <!-- <h4>Feedback To Us</h4> -->
 
-        
+          <span class="sitename" style="color: red;">COPYRIGHT & DISCLAIMER:</span>
+          <div class="footer-contact pt-3">
+            <p style="text-align: justify; font-size: 16px; ">No Part of this site can be copied or
+              reproduced in any
+              form, excepting for personal information,
+              without the written permission of the Director General of the National Library, India,
+              Kolkata.
+              While all efforts have been made to make this website as authentic as possible, The National
+              Library
+              authority do not own any responsibility to anybody for any loss or damage, owing to the use
+              of any
+              information caused by any shortcoming, defect or inaccuracy in the information from this web
+              site.</p>
+          </div>
+
+
+        </div>
       </div>
+      <!-- <div class="row disclaimer">
+    <div class="col-md-12">
+      <span>COPYRIGHT & DISCLAIMER: </span>
+      No Part of this site can be copied or reproduced in any form, excepting for personal information, without
+      the written permission of the Director General of the National Library, India, Kolkata (Calcutta).
+      While all efforts have been made to make this website as authentic as possible, The National Library
+      authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
+      information caused by any shortcoming, defect or inaccuracy in the information from this web site.
+    </div>
+  </div> -->
     </div>
 
     <div class="container copyright text-center mt-4">
@@ -213,14 +387,14 @@
         <span>All Rights Reserved</span>
       </h5>
       <div class="credits">
-        <!-- All the links in the footer should remain intact.
-              You can delete the links only if you've purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: [buy-url]
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        <!-- Combine the three lines into one -->
+        <p class="combined-text">
+          Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
+        </p>
       </div>
     </div>
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -240,6 +414,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
