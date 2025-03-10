@@ -32,8 +32,8 @@
 
     <style>
         body {
-            /* background: url('your-image-url.jpg') no-repeat center center fixed; */
-            background-color: #ececec;
+            background: url('./assets/img/Inside-view-of-National-Library-of-India-2.webp') no-repeat center center fixed;
+            /* background-color: #ececec; */
             background-size: cover;
         }
 
@@ -138,7 +138,7 @@
     <div class="container min-vh-100 d-flex align-items-center justify-content-center">
         <div class="form-container col-md-8">
             <h1 class="form-title text-center">REGISTRATION</h1>
-            <div class="bg-white dark:bg-zinc-800 p-6">
+            <div class=" dark:bg-zinc-800 p-6">
                 <p class="text-red-600 dark:text-red-400">* are required fields</p>
                 <p class="text-sm text-zinc-700 dark:text-zinc-300">
                     For Photo, only .jpg and .png files are accepted. Image resolution must not greater than 2048px
@@ -160,26 +160,25 @@
             </div>
             <form>
                 <div class="form-group mb-3">
-                    <label for="fullName">1. नाम / Full Name <span class="required">*</span></label>
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" id="firstName" class="form-control" placeholder="Enter Your First Name"
-                                required>
+                            <label for="firstName">1. पहला नाम / First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" class="form-control" placeholder="Enter Your First Name" required>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" id="middleName" class="form-control"
-                                placeholder="Enter Your Middle Name">
+                            <label for="middleName">मध्य नाम / Middle Name</label>
+                            <input type="text" id="middleName" class="form-control" placeholder="Enter Your Middle Name">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" id="surname" class="form-control" placeholder="Enter Your Surname"
-                                required>
+                            <label for="surname">उपनाम / Surname <span class="required">*</span></label>
+                            <input type="text" id="surname" class="form-control" placeholder="Enter Your Surname" required>
                         </div>
                     </div>
                 </div>
+                
 
                 <div class="form-group mb-3">
-                    <label for="fatherName">2. पिता का नाम / Parent's / Spouse / Guardian Name <span
-                            class="required">*</span></label>
+                    <label for="fatherName">2. पिता का नाम / Father's Name <span class="required">*</span></label>
                     <input type="text" id="fatherName" class="form-control" placeholder="Enter Your Father's Name"
                         required>
                 </div>
@@ -191,15 +190,21 @@
                         required>
                 </div> -->
 
-                <div class="form-group mb-3">
-                    <label for="dob">3. जन्म तिथि / Date of Birth <span class="required">*</span></label>
-                    <input type="date" id="dob" class="form-control" required>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dob">3. जन्म तिथि / Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dob" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="age">4. आयु / Age</label>
+                            <input type="text" id="age" class="form-control" readonly>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="form-group mb-3">
-                    <label for="age">4. Age</label>
-                    <input type="text" id="age" class="form-control" readonly>
-                </div>
+                
 
                 <div class="form-group mb-3">
                     <label for="address">5. पता / Communication Address <span class="required">*</span></label>
@@ -212,33 +217,64 @@
                         placeholder="Enter Your Permanent Address" required>
                 </div>
 
-                <div class="form-group mb-3">
-                    <label for="education">7. शिक्षा / Education <span class="required">*</span></label>
-                    <input type="text" id="degree" class="form-control" placeholder="Enter Degree" required>
-                    <input type="text" id="university" class="form-control mt-2" placeholder="Enter Name of University"
-                        required>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="degree">7. शिक्षा / Degree <span class="required">*</span></label>
+                            <input type="text" id="degree" class="form-control" placeholder="Enter Degree" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="university">विश्वविद्यालय का नाम / University Name <span class="required">*</span></label>
+                            <input type="text" id="university" class="form-control" placeholder="Enter Name of University" required>
+                        </div>
+                    </div>
                 </div>
+                
+                
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="occupation">8. व्यवसाय / Occupation <span class="required">*</span></label>
+                            <input type="text" id="occupation" class="form-control" placeholder="Enter Your Occupation" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="designation">9. पद / Designation</label>
+                            <input type="text" id="designation" class="form-control" placeholder="Enter Your Designation" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nationality">10. राष्ट्रीयता / Nationality <span class="required">*</span></label>
+                            <input type="text" id="nationality" class="form-control" placeholder="Enter Your Nationality" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="aadhar">11. आधार नंबर / Aadhar Number <span class="required">*</span></label>
+                            <input type="text" id="aadhar" class="form-control" placeholder="Enter Your Aadhar Number" required>
+                        </div>
+                    </div>
+                </div>
+                
+                
 
                 <div class="form-group mb-3">
-                    <label for="occupation">8. व्यवसाय / Occupation <span class="required">*</span></label>
-                    <input type="text" id="occupation" class="form-control" placeholder="Enter Your Occupation"
-                        required>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="designation">9. पद / Designation <span class="required">*</span></label>
-                    <input type="text" id="designation" class="form-control" placeholder="Enter Your Designation"
-                        required>
-                </div>
-                <div class="form-group mb-3">
-                    <label for="nationality">10. राष्ट्रीयता / Nationality <span class="required">*</span></label>
-                    <input type="text" id="nationality" class="form-control" placeholder="Enter Your Nationality"
-                        required>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="projectName">11. कार्य का नाम, यदि कोई हो / Name of Project, if any</label>
+                    <label for="projectName">12. कार्य का नाम, यदि कोई हो / Name of Project, if any</label>
                     <input type="text" id="projectName" class="form-control" placeholder="Enter Your Project Name">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="recommendedBy">13. अनुशंसित / Recommended by:</label>
+                    <input type="text" id="recommendedByName" class="form-control" placeholder="Enter Name">
+                    <input type="text" id="recommendedByDesignation" class="form-control mt-2"
+                        placeholder="Enter Designation and Address">
                 </div>
 
                 <div class="form-group mb-3">
@@ -248,42 +284,59 @@
                             <input type="email" id="email" class="form-control" placeholder="yourname@email.com"
                                 required>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-1">
+                            <label for="mobile">Code <span class="required">*</span></label>
+                            <input type="text" id="mobile" class="form-control" placeholder="+91" required>
+                        </div>
+                        <div class="col-md-5">
                             <label for="mobile">Mobile <span class="required">*</span></label>
-                            <input type="text" id="mobile" class="form-control" placeholder="+91 9876543210" required>
+                            <input type="text" id="mobile" class="form-control" placeholder="9999999999" required>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="form-group mb-3">
-                    <label for="identityProof">Identity Proof (*only .jpg/.png files are accepted)<span
-                            class="required">*</span></label>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="identityProof">Identity Proof <span class="required">*</span></label>
+                            <select id="identityProof" class="form-control mt-2" required>
+                                <option value="">Select Identity Proof</option>
+                                <option value="Aadhar Card">Aadhar Card</option>
+                                <option value="Passport">Passport</option>
+                                <option value="Voter ID">Voter ID</option>
+                                <option value="Voter ID">PAN Card</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="identityProof">Identity Proof Number <span class="required">*</span></label>
+                            <input type="text" id="identityProofNo" class="form-control mt-2"
+                                placeholder="Enter Identity Proof No." required>
+                        </div>
+                    </div>
+                    <!-- <label for="identityProof">Address Proof Proof <span class="required">*</span></label>
                     <select id="identityProof" class="form-control" required>
-                        <option value="">Select Identity Proof</option>
+                        <option value="">Select Address Proof</option>
                         <option value="Aadhar Card">Aadhar Card</option>
                         <option value="Passport">Passport</option>
                         <option value="Voter ID">Voter ID</option>
                     </select>
                     <input type="text" id="identityProofNo" class="form-control mt-2"
-                        placeholder="Enter Identity Proof No." required>
-                    <!-- <div class="custom-file mt-2">
-                        <input type="file" id="identityProofFile" class="custom-file-input" accept=".jpg,.png" required>
-                        <label class="custom-file-label" for="identityProofFile">Choose file</label>
-                    </div> -->
-                    <!-- <div class="preview mt-2" id="identityProofPreview"></div> -->
+                        placeholder="Enter Identity Proof No." required> -->
                 </div>
 
                 <div class="form-group mb-3">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="identityFrontUpload">Upload Identity Proof (Front Side)</label>
+                            <label for="identityFrontUpload">Upload Identity Proof (Front Side)<span
+                                    class="required">*</span></label>
                             <input type="file" class="form-control-file" id="identityFrontUpload"
                                 accept="image/png, image/jpeg" required>
                             <img id="previewIdentityFront" class="preview-img mt-2" alt="Identity Front Preview">
                         </div>
                         <div class="col-md-6">
-                            <label for="identityBackUpload">Upload Identity Proof (Back Side)</label>
+                            <label for="identityBackUpload">Upload Identity Proof (Back Side)<span
+                                    class="required">*</span></label>
                             <input type="file" class="form-control-file" id="identityBackUpload"
                                 accept="image/png, image/jpeg" required>
                             <img id="previewIdentityBack" class="preview-img mt-2" alt="Identity Back Preview">
@@ -293,7 +346,23 @@
 
 
                 <div class="form-group mb-3">
-                    <label for="identityProof">Address Proof Proof <span class="required">*</span></label>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="identityProof">Address Proof <span class="required">*</span></label>
+                            <select id="identityProof" class="form-control mt-2" required>
+                                <option value="">Select Address Proof</option>
+                                <option value="Aadhar Card">Aadhar Card</option>
+                                <option value="Passport">Passport</option>
+                                <option value="Voter ID">Voter ID</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="identityProof">Address Proof Number <span class="required">*</span></label>
+                            <input type="text" id="identityProofNo" class="form-control mt-2"
+                                placeholder="Enter Identity Proof No." required>
+                        </div>
+                    </div>
+                    <!-- <label for="identityProof">Address Proof Proof <span class="required">*</span></label>
                     <select id="identityProof" class="form-control" required>
                         <option value="">Select Address Proof</option>
                         <option value="Aadhar Card">Aadhar Card</option>
@@ -301,19 +370,21 @@
                         <option value="Voter ID">Voter ID</option>
                     </select>
                     <input type="text" id="identityProofNo" class="form-control mt-2"
-                        placeholder="Enter Identity Proof No." required>
+                        placeholder="Enter Identity Proof No." required> -->
                 </div>
 
                 <div class="form-group mb-3">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="addressFrontUpload">Upload Address Proof (Front)</label>
+                            <label for="addressFrontUpload">Upload Address Proof (Front)<span
+                                    class="required">*</span></label>
                             <input type="file" class="form-control-file" id="addressFrontUpload"
                                 accept="image/png, image/jpeg" required>
                             <img id="previewAddressFront" class="preview-img mt-2" alt="Address Front Preview">
                         </div>
                         <div class="col-md-6">
-                            <label for="addressBackUpload">Upload Address Proof (Back)</label>
+                            <label for="addressBackUpload">Upload Address Proof (Back)<span
+                                    class="required">*</span></label>
                             <input type="file" class="form-control-file" id="addressBackUpload"
                                 accept="image/png, image/jpeg" required>
                             <img id="previewAddressBack" class="preview-img mt-2" alt="Address Back Preview">
@@ -322,23 +393,20 @@
                 </div>
 
 
-                <div class="form-group mb-3">
-                    <label for="recommendedBy">12. अनुशंसित / Recommended by:</label>
-                    <input type="text" id="recommendedByName" class="form-control" placeholder="Enter Name">
-                    <input type="text" id="recommendedByDesignation" class="form-control mt-2"
-                        placeholder="Enter Designation and Address">
-                </div>
+                
 
                 <div class="form-group mb-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="photoUpload">Upload Passport size Photograph (jpg/png only)</label>
+                            <label for="photoUpload">Upload Passport size Photograph (jpg/png only)<span
+                                    class="required">*</span></label>
                             <input type="file" class="form-control-file" id="photoUpload" accept="image/png, image/jpeg"
                                 required>
                             <img id="previewPhoto" class="preview-img mt-2" alt="Photo Preview">
                         </div>
                         <div class="col-md-6">
-                            <label for="signatureUpload">Upload Signature (jpg/png only)</label>
+                            <label for="signatureUpload">Upload Signature (jpg/png only)<span
+                                    class="required">*</span></label>
                             <input type="file" class="form-control-file" id="signatureUpload"
                                 accept="image/png, image/jpeg" required>
                             <img id="previewSignature" class="preview-signature mt-2" alt="Signature Preview">
@@ -356,8 +424,9 @@
                     </label>
                 </div>
 
-                <div class="text-center">
-                    <button type="submit" class="btn btn-custom">Register</button>
+                <div class="d-flex justify-content-end gap-3 mt-3">
+                    <button type="button" class="btn btn-dark btn-lg px-4" onclick="goBack()">Back</button>
+                    <button type="submit" class="btn btn-custom btn-lg px-4">Register</button>
                 </div>
             </form>
         </div>
@@ -371,50 +440,55 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Calculate age based on date of birth
-        document.getElementById("dob").addEventListener("change", function () {
-            var dob = new Date(this.value);
-            var today = new Date();
-            var age = today.getFullYear() - dob.getFullYear();
-            var monthDiff = today.getMonth() - dob.getMonth();
-            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
-                age--;
-            }
-            document.getElementById("age").value = age;
-        });
-
-        // Preview Image
-        function previewFile(input, previewElement) {
-            const file = input.files[0];
-            if (file) {
-                let reader = new FileReader();
-                reader.onload = function (event) {
-                    $(previewElement).attr('src', event.target.result).show();
+        document.addEventListener("DOMContentLoaded", function () {
+            // Calculate age based on date of birth
+            document.getElementById("dob").addEventListener("change", function () {
+                var dob = new Date(this.value);
+                var today = new Date();
+                var age = today.getFullYear() - dob.getFullYear();
+                var monthDiff = today.getMonth() - dob.getMonth();
+                if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+                    age--;
                 }
-                reader.readAsDataURL(file);
+                document.getElementById("age").value = age;
+            });
+    
+            // Function to preview image
+            function previewFile(input, previewElement) {
+                const file = input.files[0];
+                if (file) {
+                    let reader = new FileReader();
+                    reader.onload = function (event) {
+                        document.querySelector(previewElement).src = event.target.result;
+                        document.querySelector(previewElement).style.display = "block";
+                    };
+                    reader.readAsDataURL(file);
+                }
             }
-        }
-
-        // Image Preview Handlers
-        $('#identityFrontUpload').on('change', function () {
-            previewFile(this, '#previewIdentityFront');
-        });
-        $('#identityBackUpload').on('change', function () {
-            previewFile(this, '#previewIdentityBack');
-        });
-        $('#addressFrontUpload').on('change', function () {
-            previewFile(this, '#previewAddressFront');
-        });
-        $('#addressBackUpload').on('change', function () {
-            previewFile(this, '#previewAddressBack');
-        });
-        $('#photoUpload').on('change', function () {
-            previewFile(this, '#previewPhoto');
-        });
-        $('#signatureUpload').on('change', function () {
-            previewFile(this, '#previewSignature');
+    
+            // Image Preview Handlers
+            const fileInputs = [
+                { input: "#identityFrontUpload", preview: "#previewIdentityFront" },
+                { input: "#identityBackUpload", preview: "#previewIdentityBack" },
+                { input: "#addressFrontUpload", preview: "#previewAddressFront" },
+                { input: "#addressBackUpload", preview: "#previewAddressBack" },
+                { input: "#photoUpload", preview: "#previewPhoto" },
+                { input: "#signatureUpload", preview: "#previewSignature" }
+            ];
+    
+            fileInputs.forEach(({ input, preview }) => {
+                document.querySelector(input).addEventListener("change", function () {
+                    previewFile(this, preview);
+                });
+            });
+    
+            // Back button functionality
+            window.goBack = function () {
+                window.history.back();
+            };
         });
     </script>
+    
 </body>
 
 </html>
