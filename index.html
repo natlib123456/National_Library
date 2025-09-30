@@ -1,1141 +1,1060 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>National Library of India</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>National Library of India</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.ico" rel="icon" />
-  <!-- <link href="assets/img/logo.png" rel="apple-touch-icon" /> -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- =======================================================
-  * Template Name: Flexor
-  * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
-  * Updated: Jun 27 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  <style>
-    .disclaimer {
-      margin-top: 20px;
-      color: #020202;
-      /* font-style: italic; */
-      padding: 0 15px;
-    }
+    <!-- Image popup helper -->
+    <script>
+      function showPopup(src) {
+        const popup = document.getElementById("imagePopup");
+        const popupImage = document.getElementById("popupImage");
+        popupImage.src = src;
+        popup.style.display = "block";
+      }
+      function closePopup() {
+        document.getElementById("imagePopup").style.display = "none";
+      }
+    </script>
+  </head>
 
-    .disclaimer span {
-      color: red;
-      font-style: normal;
-      font-weight: bold;
-    }
-  </style>
-  <script>
-    function showPopup(src) {
-      const popup = document.getElementById("imagePopup");
-      const popupImage = document.getElementById("popupImage");
-      popupImage.src = src;
-      popup.style.display = "block";
-    }
-
-    function closePopup() {
-      const popup = document.getElementById("imagePopup");
-      popup.style.display = "none";
-    }
-
-  </script>
-</head>
-
-<body class="index-page">
-  <header id="header" class="header sticky-top">
-    <div class="topbar d-flex align-items-center dark-background">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <!-- <i class="bi bi-envelope d-flex align-items-center"
-              ><a href="mailto:contact@example.com">contact@example.com</a></i
+  <body class="index-page">
+    <header id="header" class="header sticky-top">
+      <div class="topbar d-flex align-items-center dark-background">
+        <div
+          class="container d-flex justify-content-center justify-content-md-between"
+        >
+          <div class="contact-info d-flex align-items-center">
+            <i
+              class="bi bi-eye d-flex align-items-center"
+              style="padding-left: 20px"
+              ><a href="./screen_reader_access.html">Screen Reader Access</a></i
             >
-            <i class="bi bi-phone d-flex align-items-center ms-4"
-              ><span>+1 5589 55488 55</span></i
-            > -->
-          <i class="bi bi-eye d-flex align-items-center" style="padding-left: 20px"><a
-              href="./screen_reader_access.html">Screen Reader
-              Access</a></i>
-          <i class="bi bi-book d-flex align-items-center ms-4"><a href="">English</a><span>|</span><a
-              href="">हिंदी</a></i>
-        </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-youtube"></i></a>
-        </div>
-      </div>
-    </div>
-    <!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-center">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logo.png" alt="National Library of India Logo" />
-          <div class="text-content">
-            <h1 class="sitename">NATIONAL LIBRARY OF INDIA</h1>
-            <p class="sitetitle">Ministry of Culture, Government of India</p>
+            <i class="bi bi-book d-flex align-items-center ms-4"
+              ><a href="#" lang="en">English</a><span class="px-1">|</span
+              ><a href="#" lang="hi">हिंदी</a></i
+            >
           </div>
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li class="dropdown">
-              <a href="#"><span>About Us</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="./useful_info.html">Useful Information</a></li>
-                <li><a href="./whos_who.html">Who's Who</a></li>
-                <li><a href="./divisions.html">Divisions</a></li>
-                <li><a href="./history.html">History</a></li>
-                <li><a href="./prevention.html">Preservation</a></li>
-                <li><a href="./mordanisation.html">Modernisation</a></li>
-                <li><a href="./administration.html">Administration</a></li>
-                <li><a href="./more_about_nl.html">More About National Library</a></li>
-                <li><a href="./exhibitions.html">Exhibition</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#"><span>Resources</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./online_edu_resource.html">Online Education Resource</a></li>
-                <li><a href="./childran_edu_e-resource.html">Childrean Educational E-resource</a></li>
-                <li><a href="./jounals_and_news_un_db_act.html">Journals & Newspapers Under DB Act</a></li>
-                <li><a href="./online_collections.html">Online Collections</a></li>
-                <li><a href="./online journals.html">Online Journals</a></li>
-                <li><a href="./foreign_journals.html">Foreign Journals</a></li>
-                <li><a href="./collection.html">Collection</a></li>
-                <li><a href="./collection_devlopment.html">Collection Devlopment</a></li>
-                <li><a href="./collection_organization.html">Collection Organization</a></li>
-                <li><a href="./english_and _foreign_langs.html">English & Foreign Languages</a></li>
-                <li><a href="./rear_and_other_collections.html">Rare & Other Collections</a></li>
-                <li><a href="./publications.html">Publications</a></li>
-                <!-- Repeated Dropdown items removed for brevity -->
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#"><span>Comitee</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./online_edu_resource.html">Comitee 1</a></li>
-                <li><a href="./childran_edu_e-resource.html">Comitee 2</a></li>
-                <li><a href="./jounals_and_news_un_db_act.html">Comitee 3</a></li>
-                <li><a href="./online_collections.html">Comitee 4</a></li>
-
-                <!-- Repeated Dropdown items removed for brevity -->
-              </ul>
-            </li>
-
-
-
-            <li class="dropdown">
-              <a href="#"><span>Catalogue</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="https://nationallibraryopac.nvli.in/" target="_blank">Library Catalogue</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#"><span>Digital Collection</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="https://indianculture.gov.in/MoCorganization/national-library" target="_blank">Digitized
-                    Documents of National Library</a></li>
-                <li><a href="./e-resources.html">Electronic Resources</a></li>
-              </ul>
-            </li>
-            <li><a href="./contact_us.html">Contact Us</a></li>
-            <!-- <li><a href="#contact" class="login-register" style="color: #ffffff;">Login</a></li>
-            <li><a href="#contact" class="login-register" style="padding-right: 15px; color: #ffffff;">Register</a></li> -->
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-      </div>
-    </div>
-
-  </header>
-
-  <main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/nl_bg-1.jpg" alt="" data-aos="fade-in" />
-
-      <div class="container position-relative">
-        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>Welcome to National Library of India</h2>
-          <!-- <p> We are team of talented designers making websites with Bootstrap </p> -->
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a href="#" class="facebook" aria-label="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" class="instagram" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="youtube" aria-label="YouTube"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </div>
         </div>
-        <!-- End Welcome -->
+      </div>
+      <!-- End Top Bar -->
 
-        <div class="content row gy-4">
-          <div class="col-lg-12 d-flex align-items-stretch">
-            <div class="d-flex flex-column justify-content-center">
-              <div class="row gy-4">
-                <div class="col-lg-3 d-flex align-items-stretch">
-                  <a href="./news.html">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
-                      <i class="bi bi-newspaper"></i>
-                      <h4>News</h4>
-                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Icon Box -->
-
-                <div class="col-lg-3 d-flex align-items-stretch">
-                  <a href="./officeorder_circulars.html">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
-                      <i class="bi bi-megaphone"></i>
-                      <h4>Announcement</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Icon Box -->
-
-
-
-                <div class="col-lg-3 d-flex align-items-stretch">
-                  <a href="./events.html">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                      <i class="bi bi-calendar4-event"></i>
-                      <h4>Events</h4>
-                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Icon Box -->
-
-                <div class="col-lg-3 d-flex align-items-stretch">
-                  <a href="./membership.html">
-                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
-                      <i class="bi bi-people-fill"></i>
-                      <h4>Membership</h4>
-                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                    </div>
-                  </a>
-                </div>
-                <!-- End Icon Box -->
-              </div>
+      <div class="branding d-flex align-items-center">
+        <div
+          class="container position-relative d-flex align-items-center justify-content-between"
+        >
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img
+              src="assets/img/logo.png"
+              alt="National Library of India Logo"
+            />
+            <div class="text-content ms-2">
+              <h1 class="sitename mb-0">NATIONAL LIBRARY OF INDIA</h1>
+              <p class="sitetitle mb-0">
+                Ministry of Culture, Government of India
+              </p>
             </div>
-          </div>
-        </div>
-        <!-- End Content -->
-      </div>
-    </section>
+          </a>
 
-    <!-- /Hero Section -->
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="./index.html" class="active">Home</a></li>
 
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Respected</h2>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container d-flex justify-content-center align-items-center">
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member text-center">
-              <div class="member-img">
-                <img src="assets/img/team/Gajendra_Singh_Shekhawat_photo.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Shri Gajendra Singh Shekhawat</h4>
-                <span>Hon'ble Minister of Culture</span>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member text-center">
-              <div class="member-img">
-                <img src="assets/img/team/rao_inderjit_singh.png" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Shri Rao Inderjit Singh</h4>
-                <span>Hon'ble Minister of State for Culture</span>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-
-          <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member text-center">
-              <div class="member-img">
-                <img src="assets/img/team/aps_update.png" class="img-fluid" alt="" />
-              </div>
-              <div class="member-info">
-                <h4>Prof. (Dr.) Ajay Pratap Singh</h4>
-                <span>Director General</span>
-              </div>
-            </div>
-          </div>
-          <!-- End Team Member -->
-        </div>
-      </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="about section ">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/about_new.jpg" class="img-fluid" alt="" />
-            <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox pulsating-play-btn"></a> -->
-          </div>
-
-          <div class="col-lg-7 content" data-aos="fade-up" data-aos-delay="100" style="text-align: justify;">
-            <h3>National Library of India</h3>
-            <p>
-              The National Library of India, foremost among the libraries in India, is one of the four designated
-              libraries entitled to receive under the Delivery of Books and Newspapers (Public Libraries) Act, 1954 a
-              copy of every publication published anywhere in the country. The library is a permanent depository of all
-              reading and printed materials produced in India, or written by any foreigner, wherever published and in
-              whatever language.
-            </p>
-            <p>
-              The origin of the National Library of India is traced to the former Calcutta Public Library, established
-              in the first half of the 19th century. The Calcutta Public Library was established largely at the
-              initiative of Mr. J. H. Stoqueler, the Editor of the Englishman. The library was opened to the public on
-              the 21st March, 1936 on the ground floor in the residence of Dr. F.P. Strong, Civil Surgeon.
-            </p>
-            <!-- <p>
-              It was Lord Curzon who first conceived the idea of opening a library for use of the public. He took note
-              of two libraries with rich collections of book - the Imperial Library formed in 1891 by amalgamating a
-              number of Secretariat libraries and the Calcutta Public Library. The Imperial Library (Indentures
-              Validation) Act was passed in 1902 and the reconstituted Imperial Library was formally opened to the
-              public at the Metcalfe Hall on the 30th January, 1903 by Lord Curzon with the intention that it should be
-              a library of reference, a working place for students, and a repository of materials for the future
-              historians of India, in which, so far as possible, every work written about India at any time can be seen
-              and read.
-            </p> -->
-            <p>
-              <a href="./brif_nl.html">Read More....</a>
-            </p>
-            <!-- <ul>
-              <li>
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>
-                    Magni facilis facilis repellendus cum excepturi quaerat
-                    praesentium libre trade
-                  </p>
-                </div>
+              <li class="dropdown">
+                <a href="#"
+                  ><span>About Us</span
+                  ><i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="./useful_info.html">Useful Information</a></li>
+                  <li><a href="./whos_who.html">Who's Who</a></li>
+                  <li><a href="./divisions.html">Divisions</a></li>
+                  <li><a href="./history.html">History</a></li>
+                  <li><a href="./prevention.html">Preservation</a></li>
+                  <li><a href="./mordanisation.html">Modernisation</a></li>
+                  <li><a href="./administration.html">Administration</a></li>
+                  <li>
+                    <a href="./more_about_nl.html"
+                      >More About National Library</a
+                    >
+                  </li>
+                  <li><a href="./exhibitions.html">Exhibition</a></li>
+                </ul>
               </li>
-              <li>
-                <i class="bi bi-fullscreen-exit"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>
-                    Quo totam dolorum at pariatur aut distinctio dolorum
-                    laudantium illo direna pasata redi
-                  </p>
-                </div>
+
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Resources</span
+                  ><i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="./services.html">Services</a></li>
+                  <li>
+                    <a href="./online_edu_resource.html"
+                      >Online Education Resource</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./childran_edu_e-resource.html"
+                      >Children’s Educational E-resource</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./jounals_and_news_un_db_act.html"
+                      >Journals &amp; Newspapers under DB Act</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./online_collections.html">Online Collections</a>
+                  </li>
+                  <li><a href="./online_journals.html">Online Journals</a></li>
+                  <li>
+                    <a href="./foreign_journals.html">Foreign Journals</a>
+                  </li>
+                  <li><a href="./collection.html">Collection</a></li>
+                  <li>
+                    <a href="./collection_devlopment.html"
+                      >Collection Development</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./collection_organization.html"
+                      >Collection Organization</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./english_and_foreign_langs.html"
+                      >English &amp; Foreign Languages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./rare_and_other_collections.html"
+                      >Rare &amp; Other Collections</a
+                    >
+                  </li>
+                  <li><a href="./publications.html">Publications</a></li>
+                </ul>
               </li>
-              <li>
-                <i class="bi bi-broadcast"></i>
-                <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>
-                    Et velit et eos maiores est tempora et quos dolorem autem
-                    tempora incidunt maxime veniam
-                  </p>
-                </div>
+
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Committee</span
+                  ><i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li><a href="./services.html">Services</a></li>
+                  <li><a href="./online_edu_resource.html">Committee 1</a></li>
+                  <li>
+                    <a href="./childran_edu_e-resource.html">Committee 2</a>
+                  </li>
+                  <li>
+                    <a href="./jounals_and_news_un_db_act.html">Committee 3</a>
+                  </li>
+                  <li><a href="./online_collections.html">Committee 4</a></li>
+                </ul>
               </li>
-              <li>
-                <i class="bi bi-buildings"></i>
-                <div>
-                  <h5><del></del>istinctio dolorum</h5>
-                  <p>
-                    Et velit et eos maiores est tempora et quos dolorem autem
-                    tempora incidunt maxime veniam
-                  </p>
-                </div>
+
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Catalogue</span
+                  ><i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://nationallibraryopac.nvli.in/"
+                      target="_blank"
+                      rel="noopener"
+                      >Library Catalogue</a
+                    >
+                  </li>
+                </ul>
               </li>
-            </ul> -->
-          </div>
+
+              <li class="dropdown">
+                <a href="#"
+                  ><span>Digital Collection</span
+                  ><i class="bi bi-chevron-down toggle-dropdown"></i
+                ></a>
+                <ul>
+                  <li>
+                    <a
+                      href="https://indianculture.gov.in/MoCorganization/national-library"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Digitized Documents of National Library
+                    </a>
+                  </li>
+                  <li><a href="./e-resources.html">Electronic Resources</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./contact_us.html">Contact Us</a></li>
+            </ul>
+            <i
+              class="mobile-nav-toggle d-xl-none bi bi-list"
+              aria-label="Toggle navigation"
+            ></i>
+          </nav>
         </div>
       </div>
-    </section>
-    <!-- /About Section -->
+    </header>
 
-
-
-    <!-- Services Section -->
-    <section id="services" class="services section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <!-- <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p> -->
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Free Membership</h3>
-              </a>
-              <p>
-                Provident nihil minus qui consequatur non omnis maiores. Eos
-                accusantium minus dolores iure perferendis tempore.
-              </p>
+    <main class="main">
+      <!-- Hero: Section 1 — Image Slider -->
+      <!-- Hero: Section 1 — Image Slider -->
+      <section id="hero-slider" class="section dark-background py-0">
+        <div
+          id="nlHeroCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+          aria-label="Featured photos"
+          style="border: 3px solid #ff4000; overflow: hidden"
+        >
+          <!-- Slides -->
+          <div class="carousel-inner hero-carousel" data-aos="fade-in">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/nl_bg-1.jpg"
+                class="d-block w-100"
+                alt="National Library - view 1"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Readers Hostel</h3>
-              </a>
-              <p>
-                Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-              </p>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide2.jpg"
+                class="d-block w-100"
+                alt="National Library - view 2"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Book Leanding</h3>
-              </a>
-              <p>
-                Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
-              </p>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide3.jpg"
+                class="d-block w-100"
+                alt="National Library - view 3"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Confrarance Room</h3>
-              </a>
-              <p>
-                Non et temporibus minus omnis sed dolor esse consequatur.
-                Cupiditate sed error ea fuga sit provident adipisci neque.
-              </p>
-              <a href="#" class="stretched-link"></a>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide4.jpg"
+                class="d-block w-100"
+                alt="National Library - view 4"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Audoterium</h3>
-              </a>
-              <p>
-                Cumque et suscipit saepe. Est maiores autem enim facilis ut
-                aut ipsam corporis aut. Sed animi at autem alias eius labore.
-              </p>
-              <a href="#" class="stretched-link"></a>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide5.jpg"
+                class="d-block w-100"
+                alt="National Library - view 5"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Mesuam of Word</h3>
-              </a>
-              <p>
-                Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
-                neque non et debitis iure. Corrupti recusandae ducimus enim.
-              </p>
-              <a href="#" class="stretched-link"></a>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide6.jpg"
+                class="d-block w-100"
+                alt="National Library - view 6"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Services Section -->
-
-    <!-- Alt Services Section -->
-    <section id="alt-services" class="alt-services section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Your Library</h2>
-          <!-- <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p> -->
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
-                  <h3>E-Resource center</h3>
-                </a>
-                <p>
-                  Provident nihil minus qui consequatur non omnis maiores. Eos
-                  accusantium minus dolores iure perferendis.
-                </p>
-              </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide7.jpg"
+                class="d-block w-100"
+                alt="National Library - view 7"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Main-Reading Room</h3>
-                </a>
-                <p>
-                  Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                  sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-                </p>
-              </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide8.jpg"
+                class="d-block w-100"
+                alt="National Library - view 8"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Science and Technology</h3>
-                </a>
-                <p>
-                  Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                  Minus ea aut. Vel qui id voluptas adipisci eos earum
-                  corrupti.
-                </p>
-              </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide9.jpg"
+                class="d-block w-100"
+                alt="National Library - view 9"
+              />
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="img">
-                <img src="assets/img/services-4.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="details">
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Rare Book Section</h3>
-                </a>
-                <p>
-                  Non et temporibus minus omnis sed dolor esse consequatur.
-                  Cupiditate sed error ea fuga sit provident adipisci neque.
-                </p>
-                <a href="service-details.html" class="stretched-link"></a>
-              </div>
-            </div>
-          </div>
-          <!-- End Service Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /Alt Services Section -->
-
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section dark-background">
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="" />
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                }
-              }
-            </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec
-                    porttitora entum suscipit rhoncus. Accusantium quam,
-                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                    risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div> -->
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure
-                    esse labore quem cillum quid cillum eram malis quorum
-                    velit fore eram velit sunt aliqua noster fugiat irure amet
-                    legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div> -->
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim
-                    sint quorum nulla quem veniam duis minim tempor labore
-                    quem eram duis noster aute amet eram fore quis sint
-                    minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div> -->
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla
-                    culpa multos export minim fugiat minim velit minim dolor
-                    enim duis veniam ipsum anim magna sunt elit fore quem
-                    dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div> -->
-    <!-- End testimonial item -->
-
-    <!-- <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam
-                    culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div> -->
-    <!-- End testimonial item -->
-    <!-- </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section> -->
-    <!-- /Testimonials Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul> -->
-          <!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid zoom-image" alt="App 1"
-                onclick="showPopup(this.src)" />
-            </div>
-            <!-- End Portfolio Item -->
-          </div>
-          <div id="imagePopup" class="popup">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <img class="popup-content" id="popupImage" />
-          </div>
-          <!-- End Portfolio Container -->
-        </div>
-      </div>
-    </section>
-    <!-- /Portfolio Section -->
-
-
-
-    <!-- Pricing Section -->
-    <!-- <section id="pricing" class="pricing section"> -->
-    <!-- Section Title -->
-    <!-- <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div> -->
-    <!-- End Section Title -->
-
-    <!-- <div class="container">
-        <div class="row gy-3">
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div> -->
-    <!-- End Pricing Item -->
-
-    <!-- <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div> -->
-    <!-- End Pricing Item -->
-
-    <!-- <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div> -->
-    <!-- End Pricing Item -->
-
-    <!-- <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div> -->
-    <!-- End Pricing Item -->
-    <!-- </div>
-      </div>
-    </section> -->
-    <!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <!-- <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p> -->
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="faq-container">
-              <div class="faq-item " data-aos="fade-up" data-aos-delay="200">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                    id volutpat lacus laoreet non curabitur gravida. Venenatis
-                    lectus magna fringilla urna porttitor rhoncus dolor purus
-                    non.
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>
-                  Feugiat scelerisque varius morbi enim nunc faucibus a
-                  pellentesque?
-                </h3>
-                <div class="faq-content">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Id interdum velit laoreet id donec
-                    ultrices. Fringilla phasellus faucibus scelerisque
-                    eleifend donec pretium. Est pellentesque elit ullamcorper
-                    dignissim. Mauris ultrices eros in cursus turpis massa
-                    tincidunt dui.
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>
-                  Dolor sit amet consectetur adipiscing elit pellentesque?
-                </h3>
-                <div class="faq-content">
-                  <p>
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices
-                    sagittis orci. Faucibus pulvinar elementum integer enim.
-                    Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-                    tellus pellentesque eu tincidunt. Lectus urna duis
-                    convallis convallis tellus. Urna molestie at elementum eu
-                    facilisis sed odio morbi quis
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>
-                  Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-                </h3>
-                <div class="faq-content">
-                  <p>
-                    Dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Id interdum velit laoreet id donec
-                    ultrices. Fringilla phasellus faucibus scelerisque
-                    eleifend donec pretium. Est pellentesque elit ullamcorper
-                    dignissim. Mauris ultrices eros in cursus turpis massa
-                    tincidunt dui.
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
-
-              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>
-                  Tempus quam pellentesque nec nam aliquam sem et tortor
-                  consequat?
-                </h3>
-                <div class="faq-content">
-                  <p>
-                    Molestie a iaculis at erat pellentesque adipiscing
-                    commodo. Dignissim suspendisse in est ante in. Nunc vel
-                    risus commodo viverra maecenas accumsan. Sit amet nisl
-                    suscipit adipiscing bibendum est. Purus gravida quis
-                    blandit turpis cursus in
-                  </p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div>
-              <!-- End Faq item-->
+            <div class="carousel-item">
+              <img
+                src="assets/img/slider/slide10.jpg"
+                class="d-block w-100"
+                alt="National Library - view 10"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /Faq Section -->
+      </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Feedback</h2>
-        <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <!-- <div class="col-md-6">
-              <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-                <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+      <!-- About + Respected Section (Beautified) -->
+      <section id="about-respected" class="about section light-background">
+        <div class="container">
+          <div class="row gy-5 align-items-start">
+            <!-- Left: Dignitaries -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <!-- <div class="section-subtitle mb-3">Respected</div> -->
+              <div class="leaders">
+                <!-- Card 1 -->
+                <div class="card mb-3 text-center">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img
+                      src="assets/img/team/Gajendra_Singh_Shekhawat_photo.jpg"
+                      class="leader-img"
+                      alt="Shri Gajendra Singh Shekhawat"
+                    />
+                    <div class="mt-3">
+                      <div class="leader-name">
+                        Shri Gajendra Singh Shekhawat
+                      </div>
+                      <div class="leader-role">Hon'ble Minister of Culture</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div> -->
-          <!-- End Info Item -->
 
-          <!-- <div class="col-md-6">
-              <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-                <i class="icon bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                <!-- Card 2 -->
+                <div class="card mb-3 text-center">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img
+                      src="assets/img/team/rao_inderjit_singh.png"
+                      class="leader-img"
+                      alt="Shri Rao Inderjit Singh"
+                    />
+                    <div class="mt-3">
+                      <div class="leader-name">Shri Rao Inderjit Singh</div>
+                      <div class="leader-role">
+                        Hon'ble Minister of State for Culture
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div> -->
-          <!-- End Info Item -->
 
-          <!-- <div class="col-md-6">
-              <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-                <i class="icon bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div>
-            </div> -->
-          <!-- End Info Item -->
-
-          <!-- <div class="col-md-6">
-              <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-                <i class="icon bi bi-share flex-shrink-0"></i>
-                <div>
-                  <h3>Social Profiles</h3>
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-skype"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                <!-- Card 3 -->
+                <div class="card text-center">
+                  <div class="card-body d-flex flex-column align-items-center">
+                    <img
+                      src="assets/img/team/aps_update.png"
+                      class="leader-img"
+                      alt="Prof. (Dr.) Ajay Pratap Singh"
+                    />
+                    <div class="mt-3">
+                      <div class="leader-name">
+                        Prof. (Dr.) Ajay Pratap Singh
+                      </div>
+                      <div class="leader-role">Director General</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div> -->
-          <!-- End Info Item -->
-        </div>
-
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="" />
             </div>
+            <!-- End Left -->
 
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="" />
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="" />
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Your message has been sent. Thank you!
+            <!-- Right: About + DG Message (stacked in one column) -->
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+              <!-- About -->
+              <div class="about-text mb-4">
+                <h3 class="mb-3 text-center">National Library of India</h3>
+                <img
+                  src="assets/img/about_new.jpg"
+                  class="img-fluid mb-3 about-hero"
+                  alt="National Library of India building"
+                />
+                <p style="text-align: justify">
+                  The National Library of India, foremost among the libraries in
+                  India, is one of the four designated libraries entitled to
+                  receive under the Delivery of Books and Newspapers (Public
+                  Libraries) Act, 1954 a copy of every publication published
+                  anywhere in the country. The library is a permanent depository
+                  of all reading and printed materials produced in India, or
+                  written by any foreigner, wherever published and in whatever
+                  language.
+                </p>
+                <p style="text-align: justify">
+                  The origin of the National Library of India is traced to the
+                  former Calcutta Public Library, established in the first half
+                  of the 19th century. The Calcutta Public Library was
+                  established largely at the initiative of Mr. J. H. Stoqueler,
+                  the Editor of the <em>Englishman</em>. The library was opened
+                  to the public on the <strong>21st March, 1836</strong> on the
+                  ground floor in the residence of Dr. F. P. Strong, Civil
+                  Surgeon.
+                </p>
+                <p class="mb-0">
+                  <a
+                    class="btn btn-outline-primary btn-sm"
+                    href="./brif_nl.html"
+                    aria-label="Read more about the National Library"
+                    >Read More</a
+                  >
+                </p>
               </div>
 
-              <button type="submit">Send Message</button>
+              <hr class="my-4" />
+
+              <!-- Director General's Message -->
+              <div class="about-text">
+                <h3 class="mb-3 text-center">Director General's Message</h3>
+                <p style="text-align: justify">
+                  The National Library of India offers its vast treasure of
+                  books, magazines and journals published across the country and
+                  the world to researchers/scholars as well as lay readers.
+                  Publications from across the world are housed in it and are
+                  preserved and restored for the use of the readers of today and
+                  tomorrow. Although the Covid-19 pandemic has affected the
+                  entire society, the National Library continues with its
+                  services with the pandemic protocol in place for the welfare
+                  of our readers.
+                </p>
+                <p style="text-align: justify">
+                  In view of the constraints on mobility, the National Library
+                  has introduced an online registration process. Any citizen
+                  beyond 18 years of age can become a member of the Library by
+                  submitting the ‘Registration Form’ from anywhere within the
+                  country on the National Library website. Citizens may also
+                  reach out to the National Library through Facebook, Twitter,
+                  YouTube and Instagram.
+                </p>
+                <p class="mb-0">
+                  <a
+                    class="btn btn-outline-primary btn-sm"
+                    href="./director_msg.html"
+                    aria-label="Read Director General's full message"
+                    >Read More</a
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- End Right -->
+          </div>
+        </div>
+      </section>
+      <!-- /About + Respected Section -->
+      <!-- Hero: Section 2 — Quick Links / Icon Boxes -->
+      <section id="hero-quicklinks" class="hero2 section">
+        <div class="container position-relative">
+          <div class="content row gy-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <a href="./news.html" class="text-decoration-none w-100">
+                <div class="icon-box h-100">
+                  <i class="bi bi-newspaper" aria-hidden="true"></i>
+                  <h4>News</h4>
+                  <p>
+                    Latest updates and announcements from the National Library.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <a
+                href="./officeorder_circulars.html"
+                class="text-decoration-none w-100"
+              >
+                <div class="icon-box h-100">
+                  <i class="bi bi-megaphone" aria-hidden="true"></i>
+                  <h4>Announcements</h4>
+                  <p>Office orders, circulars and public notices.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <a href="./events.html" class="text-decoration-none w-100">
+                <div class="icon-box h-100">
+                  <i class="bi bi-calendar4-event" aria-hidden="true"></i>
+                  <h4>Events</h4>
+                  <p>Talks, exhibitions, and special programmes.</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+              <a href="./membership.html" class="text-decoration-none w-100">
+                <div class="icon-box h-100">
+                  <i class="bi bi-people-fill" aria-hidden="true"></i>
+                  <h4>Membership</h4>
+                  <p>Join the library and explore our collections.</p>
+                </div>
+              </a>
             </div>
           </div>
-        </form>
-        <!-- End Contact Form -->
-      </div>
-    </section>
-    <!-- /Contact Section -->
+        </div>
+      </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
+      <!-- Services Section -->
+      <section id="services" class="services section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+        </div>
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="stretched-link"><h3>Free Membership</h3></a>
+                <p>
+                  Access a world of knowledge with our membership programmes.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="stretched-link"><h3>Readers’ Hostel</h3></a>
+                <p>
+                  Comfortable accommodation for registered readers and scholars.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="stretched-link"><h3>Book Lending</h3></a>
+                <p>
+                  Borrow books from select collections per library guidelines.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="stretched-link"><h3>Conference Room</h3></a>
+                <p>Spaces equipped for seminars, workshops, and meetings.</p>
+                <a
+                  href="#"
+                  class="stretched-link"
+                  aria-hidden="true"
+                  tabindex="-1"
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="stretched-link"><h3>Auditorium</h3></a>
+                <p>Large format events and cultural programmes.</p>
+                <a
+                  href="#"
+                  class="stretched-link"
+                  aria-hidden="true"
+                  tabindex="-1"
+                ></a>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="stretched-link"><h3>Museum of Words</h3></a>
+                <p>
+                  Exhibitions celebrating the history of print and literature.
+                </p>
+                <a
+                  href="#"
+                  class="stretched-link"
+                  aria-hidden="true"
+                  tabindex="-1"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Alt Services Section -->
+      <section id="alt-services" class="alt-services section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Your Library</h2>
+          </div>
+          <div class="row gy-4">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="assets/img/services-1.jpg"
+                    class="img-fluid"
+                    alt="E-Resource Center"
+                  />
+                </div>
+                <div class="details">
+                  <a href="service-details.html" class="stretched-link"
+                    ><h3>E-Resource Center</h3></a
+                  >
+                  <p>
+                    Access digital resources, databases, and online journals.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="assets/img/services-2.jpg"
+                    class="img-fluid"
+                    alt="Main Reading Room"
+                  />
+                </div>
+                <div class="details">
+                  <a href="service-details.html" class="stretched-link"
+                    ><h3>Main Reading Room</h3></a
+                  >
+                  <p>
+                    Quiet study spaces with access to reference collections.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="assets/img/services-3.jpg"
+                    class="img-fluid"
+                    alt="Science and Technology"
+                  />
+                </div>
+                <div class="details">
+                  <a href="service-details.html" class="stretched-link"
+                    ><h3>Science and Technology</h3></a
+                  >
+                  <p>
+                    Specialised collections supporting research and innovation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="500">
+              <div class="service-item position-relative">
+                <div class="img">
+                  <img
+                    src="assets/img/services-4.jpg"
+                    class="img-fluid"
+                    alt="Rare Book Section"
+                  />
+                </div>
+                <div class="details">
+                  <a href="service-details.html" class="stretched-link"
+                    ><h3>Rare Book Section</h3></a
+                  >
+                  <p>Safeguarding invaluable manuscripts and rare editions.</p>
+                  <a
+                    href="service-details.html"
+                    class="stretched-link"
+                    aria-hidden="true"
+                    tabindex="-1"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Alt Services Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Gallery</h2>
+          <p>Moments and spaces from the National Library.</p>
+        </div>
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 1"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 2"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 3"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 4"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 5"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 6"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 7"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 8"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img
+                  src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
+                  class="img-fluid zoom-image"
+                  alt="Gallery image 9"
+                  onclick="showPopup(this.src)"
+                />
+              </div>
+            </div>
+
+            <!-- Image Popup -->
+            <div
+              id="imagePopup"
+              class="popup"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Image preview"
+            >
+              <span class="close" onclick="closePopup()" aria-label="Close"
+                >&times;</span
+              >
+              <img
+                class="popup-content"
+                id="popupImage"
+                alt="Previewed image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                      id volutpat lacus laoreet non curabitur gravida.
+                    </p>
+                  </div>
+                  <i
+                    class="faq-toggle bi bi-chevron-right"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>
+                    Feugiat scelerisque varius morbi enim nunc faucibus a
+                    pellentesque?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Dolor sit amet consectetur adipiscing elit pellentesque
+                      habitant morbi. Id interdum velit laoreet id donec
+                      ultrices.
+                    </p>
+                  </div>
+                  <i
+                    class="faq-toggle bi bi-chevron-right"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                      sagittis orci. Faucibus pulvinar elementum integer enim.
+                    </p>
+                  </div>
+                  <i
+                    class="faq-toggle bi bi-chevron-right"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Est pellentesque elit ullamcorper dignissim. Mauris
+                      ultrices eros in cursus turpis massa tincidunt dui.
+                    </p>
+                  </div>
+                  <i
+                    class="faq-toggle bi bi-chevron-right"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                  <i class="faq-icon bi bi-question-circle"></i>
+                  <h3>
+                    Tempus quam pellentesque nec nam aliquam sem et tortor
+                    consequat?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Nunc vel risus commodo viverra maecenas accumsan. Sit amet
+                      nisl suscipit adipiscing bibendum est.
+                    </p>
+                  </div>
+                  <i
+                    class="faq-toggle bi bi-chevron-right"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /FAQ Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Feedback</h2>
+          <p>We value your feedback and suggestions.</p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <form
+            action="forms/contact.php"
+            method="post"
+            class="php-email-form"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+
+      <!-- Clients Section -->
+      <section id="clients" class="clients section light-background">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
+                "autoplay": { "delay": 5000 },
                 "slidesPerView": "auto",
                 "pagination": {
                   "el": ".swiper-pagination",
@@ -1143,166 +1062,182 @@
                   "clickable": true
                 },
                 "breakpoints": {
-                  "320": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 40
-                  },
-                  "480": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 60
-                  },
-                  "640": {
-                    "slidesPerView": 4,
-                    "spaceBetween": 80
-                  },
-                  "992": {
-                    "slidesPerView": 6,
-                    "spaceBetween": 120
-                  }
+                  "320": { "slidesPerView": 2, "spaceBetween": 40 },
+                  "480": { "slidesPerView": 3, "spaceBetween": 60 },
+                  "640": { "slidesPerView": 4, "spaceBetween": 80 },
+                  "992": { "slidesPerView": 6, "spaceBetween": 120 }
                 }
               }
             </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/govt.png" class="img-fluid" alt="" />
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/govt.png"
+                  class="img-fluid"
+                  alt="Government of India"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/gem.jpg"
+                  class="img-fluid"
+                  alt="GeM"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/azadi_logo.png"
+                  class="img-fluid"
+                  alt="Azadi Ka Amrit Mahotsav"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/nkn.png"
+                  class="img-fluid"
+                  alt="NKN"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/incredible.png"
+                  class="img-fluid"
+                  alt="Incredible India"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/sangam.jpg"
+                  class="img-fluid"
+                  alt="Sangam"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/extra_logo/ndl.png"
+                  class="img-fluid"
+                  alt="NDL"
+                />
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/gem.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/azadi_logo.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/nkn.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/incredible.png" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/sangam.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/img/extra_logo/ndl.png" class="img-fluid" alt="" />
-            </div>
-
-            <!-- <div class="swiper-slide">
-              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="" />
-            </div> -->
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- /Clients Section -->
+    </main>
+
+    <footer id="footer" class="footer light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">National Library of India</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Belvedere, Kolkata</p>
+              <p>West Bengal, 700027, India</p>
+              <p class="mt-3">
+                <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span
+                ><br />
+                <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <span>dgnl.kol-culture@nic.in</span><br />
+                <span>nldirector@rediffmail.com</span>
+              </p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="#" aria-label="Twitter / X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <span class="sitename">Useful Links</span>
+            <div class="footer-contact pt-3">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Library Catalogue</a></li>
+                <li><a href="#">Digitized Book</a></li>
+                <li><a href="#">RTI</a></li>
+                <li>
+                  <a href="#">Recruitment Rules &amp; Vacancy Position</a>
+                </li>
+                <li><a href="./tenders.html">Tenders</a></li>
+                <li><a href="./contact_us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-3 footer-about">
+            <span class="sitename" style="color: red"
+              >COPYRIGHT &amp; DISCLAIMER:</span
+            >
+            <div class="footer-contact pt-3">
+              <p style="text-align: justify; font-size: 16px">
+                No part of this site can be copied or reproduced in any form,
+                except for personal information, without the written permission
+                of the Director General of the National Library, India, Kolkata.
+                While all efforts have been made to make this website as
+                authentic as possible, the National Library authority does not
+                own any responsibility to anybody for any loss or damage, owing
+                to the use of any information caused by any shortcoming, defect
+                or inaccuracy in the information from this website.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- /Clients Section -->
 
-
-  </main>
-
-  <footer id="footer" class="footer light-background">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">National Library of India</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Belvedere, Kol;Kolkata</p>
-            <p>West Bengal, 700027, India</p>
-            <p class="mt-3">
-              <strong>Main Campus:</strong> <span>+91-33-2479 1381 to 87</span><br>
-              <strong>Director's Phone:</strong> <span>+91-33-2479 2466</span>
-            </p>
-            <p><strong>Email:</strong> <span>dgnl.kol-culture@nic.in</span><br><span>nldirector@rediffmail.com</span>
-            </p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-3 footer-links">
-          <!-- <h3 >Useful Links</h3> -->
-          <span class="sitename">Useful Links</span>
-          <div class="footer-contact pt-3">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Library Catalogue</a></li>
-              <li><a href="#">Digitized Book</a></li>
-              <li><a href="#">RTI</a></li>
-              <li><a href="#">Recruitment Rules & Vacency Position</a></li>
-              <li><a href="./tenders.html">Tenders</a></li>
-              <li><a href="./contact_us.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-5 col-md-3 footer-about">
-          <!-- <h4>Feedback To Us</h4> -->
-
-          <span class="sitename" style="color: red;">COPYRIGHT & DISCLAIMER:</span>
-          <div class="footer-contact pt-3">
-            <p style="text-align: justify; font-size: 16px; ">No Part of this site can be copied or reproduced in any
-              form, excepting for personal information,
-              without the written permission of the Director General of the National Library, India, Kolkata.
-              While all efforts have been made to make this website as authentic as possible, The National Library
-              authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
-              information caused by any shortcoming, defect or inaccuracy in the information from this web site.</p>
-          </div>
-
-
+      <div class="container copyright text-center mt-4">
+        <h5>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">The National Library</strong>
+          <span>All Rights Reserved</span>
+        </h5>
+        <div class="credits">
+          <p class="combined-text">
+            Devloped by National Library || Hosted by NIC || Last update: 14 Jan
+            2025 || Visitor: 10025654588
+          </p>
         </div>
       </div>
-      <!-- <div class="row disclaimer">
-          <div class="col-md-12">
-            <span>COPYRIGHT & DISCLAIMER: </span>
-            No Part of this site can be copied or reproduced in any form, excepting for personal information, without
-            the written permission of the Director General of the National Library, India, Kolkata (Calcutta).
-            While all efforts have been made to make this website as authentic as possible, The National Library
-            authority do not own any responsibility to anybody for any loss or damage, owing to the use of any
-            information caused by any shortcoming, defect or inaccuracy in the information from this web site.
-          </div>
-        </div> -->
-    </div>
+    </footer>
 
-    <div class="container copyright text-center mt-4">
-      <h5>
-        © <span>Copyright</span>
-        <strong class="px-1 sitename">The National Library</strong>
-        <span>All Rights Reserved</span>
-      </h5>
-      <div class="credits">
-        <!-- Combine the three lines into one -->
-        <p class="combined-text">
-          Designed by National Library || Hosted By NIC || Last update: 14 Jan 2025 || Visitor: 10025654588
-        </p>
-        <!-- <p style="text-align: left;">Design and Devloped by Krishnendu Das (Softwer Developer At National Library)</p> -->
-      </div>
-    </div>
-  </footer>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short" aria-hidden="true"></i
+    ></a>
 
+    <!-- Preloader -->
+    <div id="preloader" aria-hidden="true"></div>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
