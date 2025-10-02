@@ -259,3 +259,6 @@
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+.icon{
+  color: #ff4000;
+}
