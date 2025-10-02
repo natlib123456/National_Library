@@ -1,125 +1,3 @@
-/* ===============================
-   NO-SHAKE TOPBAR + NAVBAR (ONLY)
-   =============================== */
-
-/* Set the real topbar height once */
-:root {
-  --nl-topbar-h: 40px;
-}
-
-/* Header paint-only transitions */
-.header {
-  transition: background-color 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Keep header sticky and high z-index */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-/* ---- TOPBAR: out of flow, fades only (no layout animations) ---- */
-.header .topbar {
-  position: absolute;
-  inset: 0 auto auto 0;
-  right: 0;
-  height: var(--nl-topbar-h);
-  line-height: var(--nl-topbar-h);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transition: opacity 0.18s ease, visibility 0.18s ease; /* no transform */
-}
-
-/* Reserve space for topbar only when visible */
-.header .branding {
-  padding-top: var(--nl-topbar-h);
-}
-
-/* On scroll: remove space instantly; fade topbar */
-.scrolled .header .branding {
-  padding-top: 0;
-}
-.scrolled .header .topbar {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-/* ---- NAVBAR: freeze metrics so hover doesn't reflow ---- */
-.navmenu > ul {
-  display: flex;
-  align-items: center;
-}
-
-.navmenu > ul > li > a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  height: 56px;
-  line-height: 1;
-  padding: 0 14px;
-  text-decoration: none;
-  font-weight: 600;
-  border-bottom: 2px solid transparent; /* pre-reserve underline space */
-  transition: color 0.15s ease, background-color 0.15s ease; /* no padding/height */
-}
-.navmenu > ul > li > a:hover,
-.navmenu > ul > li > a:focus {
-  color: var(--accent-color);
-}
-.navmenu > ul > li > a.active {
-  font-weight: 600;
-}
-
-/* Icons should not change metrics on hover */
-.navmenu a i {
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Desktop dropdowns: transform/opacity only (no top/left animation) */
-@media (min-width: 1200px) {
-  .navmenu .dropdown ul {
-    top: 100%;
-    left: 14px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(8px);
-    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
-  }
-  .navmenu .dropdown:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .navmenu .dropdown .dropdown ul {
-    top: 0;
-    left: -100%;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(8px);
-    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
-  }
-  .navmenu .dropdown .dropdown:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-
-/* Mobile toggle: paint-only */
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    transition: color 0.15s ease;
-  }
-}
-
-/* =============== Your existing custom styles =============== */
-
 /* ---------- Small card utilities ---------- */
 .card-style {
   max-width: 18rem; /* Control card width */
@@ -234,6 +112,7 @@
 }
 
 /* ---------- Hero: Quick Links / Icon Boxes (Section 2) ---------- */
+/* Remove section background and extra vertical gap */
 #hero-quicklinks {
   background: none;
   padding-top: 1rem; /* tighter top */
@@ -241,16 +120,18 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+/* Tighten heading spacing */
 #hero-quicklinks .welcome h2 {
   margin-bottom: 1rem;
 }
 
+/* Icon-box cards: clean white look and compact padding */
 #hero-quicklinks .icon-box {
-  background: #fff;
+  background: #fff; /* white cards (no tinted bg) */
   border: 1px solid #e0e0e0;
   border-radius: 1rem;
-  padding: 18px 14px;
-  margin-bottom: 0;
+  padding: 18px 14px; /* slightly smaller */
+  margin-bottom: 0; /* avoid extra space below */
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 #hero-quicklinks .icon-box:hover {
@@ -280,6 +161,7 @@
   text-align: center;
   position: relative;
 }
+
 .hero2 img {
   position: absolute;
   inset: 0;
@@ -289,6 +171,7 @@
   object-fit: cover;
   z-index: 1;
 }
+
 .hero2:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 70%);
@@ -296,36 +179,44 @@
   inset: 0;
   z-index: 2;
 }
+
 .hero2 .container {
   z-index: 3;
 }
+
 .hero2 .welcome h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
 }
+
 .hero2 .welcome p {
   font-size: 24px;
   margin: 0;
 }
+
 .hero2 .content {
   margin-top: 40px;
 }
+
 .hero2 .content .why-box {
   color: var(--contrast-color);
   background: var(--accent-color);
   padding: 30px;
   border-radius: 4px;
 }
+
 .hero2 .content .why-box h3 {
   color: var(--contrast-color);
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
 }
+
 .hero2 .content .why-box p {
   margin-bottom: 30px;
 }
+
 .hero2 .content .why-box .more-btn {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--contrast-color), transparent 80%);
@@ -334,13 +225,16 @@
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
 }
+
 .hero2 .content .why-box .more-btn i {
   font-size: 14px;
 }
+
 .hero2 .content .why-box .more-btn:hover {
   background: var(--contrast-color);
   color: var(--accent-color);
 }
+
 .hero .content .icon-box {
   background: color-mix(in srgb, var(--surface-color), transparent 20%);
   text-align: center;
@@ -349,15 +243,18 @@
   padding: 40px 30px;
   width: 100%;
 }
+
 .hero2 .content .icon-box i {
   font-size: 40px;
   color: var(--accent-color);
 }
+
 .hero2 .content .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 10px 0 20px 0;
 }
+
 .hero2 .content .icon-box p {
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
