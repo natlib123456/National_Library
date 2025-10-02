@@ -405,9 +405,11 @@ h6 {
 }
 
 .scrolled .header .topbar {
+  
   height: 0;
   visibility: hidden;
   overflow: hidden;
+  transition: 0.1s;
 }
 
 /*--------------------------------------------------------------
