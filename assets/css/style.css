@@ -1,5 +1,22 @@
-/* ---------- Small card utilities ---------- */
+/* =========================================================
+   Global Theme Variables
+   ========================================================= */
+:root {
+    --maroon: #ff4000;
+    --card-bg: #fff;
+    --card-border: rgba(0, 0, 0, .06);
+    --shadow: 0 6px 22px rgba(0, 0, 0, .06);
+    --accent: #ff4000;
+    /* site accent */
+}
 
+.text-maroon {
+    color: var(--maroon);
+}
+
+/* =========================================================
+   Small card utilities
+   ========================================================= */
 .card-style {
     max-width: 18rem;
     /* Control card width */
@@ -15,9 +32,9 @@
     margin: 0 auto;
 }
 
-
-/* ---------- Footer disclaimer ---------- */
-
+/* =========================================================
+   Footer disclaimer
+   ========================================================= */
 .disclaimer {
     margin-top: 20px;
     color: #020202;
@@ -29,9 +46,9 @@
     font-weight: bold;
 }
 
-
-/* ---------- About + Respected (Dignitaries) ---------- */
-
+/* =========================================================
+   About + Respected (Dignitaries)
+   ========================================================= */
 .about .leaders .card {
     border: none;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
@@ -79,9 +96,9 @@
     font-size: 0.85rem;
 }
 
-
-/* ---------- Image popup (optional) ---------- */
-
+/* =========================================================
+   Image popup (optional)
+   ========================================================= */
 .popup {
     display: none;
     position: fixed;
@@ -112,9 +129,9 @@
     cursor: pointer;
 }
 
-
-/* ---------- Hero: carousel (Section 1) ---------- */
-
+/* =========================================================
+   Hero: carousel (Section 1)
+   ========================================================= */
 .hero-carousel .carousel-item img {
     height: 60vh;
     /* viewport-based height */
@@ -132,12 +149,10 @@
     pointer-events: none;
 }
 
-
-/* ---------- Hero: Quick Links / Icon Boxes (Section 2) ---------- */
-
-
+/* =========================================================
+   Hero: Quick Links / Icon Boxes (Section 2)
+   ========================================================= */
 /* Remove section background and extra vertical gap */
-
 #hero-quicklinks {
     background: none;
     padding-top: 1rem;
@@ -148,16 +163,12 @@
     margin-bottom: 0;
 }
 
-
 /* Tighten heading spacing */
-
 #hero-quicklinks .welcome h2 {
     margin-bottom: 1rem;
 }
 
-
 /* Icon-box cards: clean white look and compact padding */
-
 #hero-quicklinks .icon-box {
     background: #fff;
     /* white cards (no tinted bg) */
@@ -300,15 +311,12 @@
 }
 
 .icon {
-    color: #ff4000;
+    color: var(--accent);
 }
 
-
-/* <!-- Helper CSS keeps embeds tidy & scrollable like your screenshot --> */
-
-
-/* Background & base */
-
+/* =========================================================
+   Social Media embeds (helper CSS)
+   ========================================================= */
 #social-media {
     /* background: #7a1f1f; */
 }
@@ -317,9 +325,7 @@
     color: #39312f;
 }
 
-
 /* Cards */
-
 #social-media .social-card {
     border-radius: 14px;
     background: #f5f5f5;
@@ -339,20 +345,14 @@
     text-align: center;
 }
 
-
-/* Equal, responsive heights for all embeds
-   ~60vh on desktop, ~60vh on tablet, ~55vh on mobile.
-   Clamp keeps a sensible px range on very tall/short screens. */
-
+/* Equal responsive heights */
 #social-media .social-frame {
     border-radius: 12px;
     overflow: hidden;
     height: clamp(360px, 45vh, 700px);
 }
 
-
 /* Iframes fill the frame exactly */
-
 #social-media .sm-iframe {
     width: 100%;
     height: 100%;
@@ -360,9 +360,7 @@
     display: block;
 }
 
-
 /* Smaller screens */
-
 @media (max-width: 991.98px) {
     #social-media .social-frame {
         height: clamp(320px, 45vh, 640px);
@@ -373,16 +371,18 @@
     #social-media .social-frame {
         height: clamp(280px, 30vh, 520px);
     }
+
     #social-media h2 {
         font-size: 1.35rem;
     }
 }
 
-
-/* Tabs rail (maroon/pink) */
-
+/* =========================================================
+   Quicklinks Tabs (News / Recruitment / Events / Tenders)
+   ========================================================= */
+/* Tabs rail (accent + white) */
 .nl-tabs {
-    border: 1px solid #ff4000;
+    border: 1px solid var(--accent);
     border-radius: .5rem;
     background: #ffffff;
     gap: 0;
@@ -393,7 +393,7 @@
 }
 
 .nl-tabs .nav-link {
-    color: #ff4000;
+    color: var(--accent);
     font-weight: 600;
     padding: .9rem 1rem;
     border-right: 1px solid rgba(122, 31, 31, .25);
@@ -407,23 +407,19 @@
 }
 
 .nl-tabs .nav-link.active {
-    background: #ff4000;
+    background: var(--accent);
     color: #fff;
-    border-color: #ff4000;
+    border-color: var(--accent);
 }
 
-
 /* Card under tabs */
-
 .nl-card {
     background: #fff;
     border-radius: .5rem;
     border: 1px solid rgba(0, 0, 0, .06);
 }
 
-
 /* Single list (10 items) */
-
 .nl-list {
     list-style: none;
     margin: 0;
@@ -445,7 +441,7 @@
 }
 
 .nl-item:hover {
-    color: #ff4000;
+    color: var(--accent);
 }
 
 .nl-title {
@@ -461,13 +457,11 @@
 
 .nl-arrow {
     font-size: 1.25rem;
-    color: #ff4000;
+    color: var(--accent);
     flex-shrink: 0;
 }
 
-
-/* Scroll area = exactly 5 rows (JS will set max-height precisely) */
-
+/* Scroll area – exact 5 rows (JS adjusts) */
 .nl-scroll {
     overflow-y: auto;
     padding-right: 6px;
@@ -481,16 +475,14 @@
 }
 
 .nl-scroll::-webkit-scrollbar-thumb {
-    background: #d5d5d5;
+    background: #ff4000;
     border-radius: 8px;
 }
 
-
 /* VIEW MORE pill */
-
 .nl-viewmore {
     background: #f7dede;
-    color: #ff4000;
+    color: var(--accent);
     font-weight: 600;
     border: 1px solid #f0c6c6;
     border-radius: .5rem;
@@ -500,14 +492,12 @@
 }
 
 .nl-viewmore:hover {
-    background: #ff4000;
+    background: var(--accent);
     color: #fff;
-    border-color: #ff4000;
+    border-color: var(--accent);
 }
 
-
 /* Responsive tune-ups */
-
 @media (max-width: 991.98px) {
     .nl-tabs .nav-link {
         padding: .8rem .9rem;
@@ -519,6 +509,7 @@
         font-size: .95rem;
         padding: .7rem .85rem;
     }
+
     .nl-item {
         padding: .85rem .25rem;
     }
@@ -527,5 +518,115 @@
 @media (max-width: 575.98px) {
     .nl-tabs .nav-link {
         font-size: .9rem;
+    }
+}
+
+/* =========================================================
+   Contact / Feedback + Important Links (cards)
+   (Merged and color-aligned with existing theme)
+   ========================================================= */
+#contact .feedback-card,
+#contact .imp-links-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 18px;
+}
+
+/* Heading INSIDE the feedback card */
+#contact .feedback-header h2 {
+    font-weight: 700;
+    color: #2f3131;
+}
+
+#contact .feedback-header p {
+    color: #6b7070;
+}
+
+/* Form */
+#contact .form-control {
+    height: auto;
+    padding: .8rem .9rem;
+}
+
+#contact .btn-send {
+    background: var(--accent);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: .65rem 1.25rem;
+    border-radius: 999px;
+}
+
+#contact .btn-send:hover {
+    filter: brightness(.95);
+}
+
+/* Important links body: fixed height + scroll (no growth) */
+#contact .imp-links-body {
+    height: clamp(260px, 45vh, 420px);
+    max-height: clamp(260px, 45vh, 420px);
+    overflow: auto;
+    padding-right: 6px;
+}
+
+/* Links list styling */
+#contact .imp-links li+li {
+    border-top: 1px solid #ececec;
+}
+
+#contact .imp-links a {
+    display: block;
+    padding: 14px 6px;
+    color: #2f3131;
+    text-decoration: none;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+#contact .imp-links a:hover {
+    color: var(--maroon);
+}
+
+/* Nice thin scrollbar */
+#contact .imp-links-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+#contact .imp-links-body::-webkit-scrollbar-thumb {
+    background: var(--maroon);
+    border-radius: 8px;
+}
+
+#contact .imp-links-body::-webkit-scrollbar-track {
+    background: #f7dede;
+    border-radius: 8px;
+}
+
+/* Responsive spacing for cards */
+@media (max-width: 991.98px) {
+
+    #contact .feedback-card,
+    #contact .imp-links-card {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    #contact .feedback-card,
+    #contact .imp-links-card {
+        padding: 14px;
+    }
+
+    #contact .imp-links-body {
+        height: clamp(220px, 42vh, 360px);
+        max-height: clamp(220px, 42vh, 360px);
+    }
+
+    /* Keep left-aligned heading on very small screens */
+    #contact .feedback-header {
+        text-align: left;
     }
 }
