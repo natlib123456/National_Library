@@ -382,9 +382,9 @@
 /* Tabs rail (maroon/pink) */
 
 .nl-tabs {
-    border: 1px solid #7a1f1f;
+    border: 1px solid #ff4000;
     border-radius: .5rem;
-    background: #f7dede;
+    background: #ffffff;
     gap: 0;
     margin-bottom: .75rem;
     overflow-x: auto;
@@ -393,7 +393,7 @@
 }
 
 .nl-tabs .nav-link {
-    color: #5b1a1a;
+    color: #ff4000;
     font-weight: 600;
     padding: .9rem 1rem;
     border-right: 1px solid rgba(122, 31, 31, .25);
@@ -407,9 +407,9 @@
 }
 
 .nl-tabs .nav-link.active {
-    background: #7a1f1f;
+    background: #ff4000;
     color: #fff;
-    border-color: #7a1f1f;
+    border-color: #ff4000;
 }
 
 
@@ -445,7 +445,7 @@
 }
 
 .nl-item:hover {
-    color: #7a1f1f;
+    color: #ff4000;
 }
 
 .nl-title {
@@ -461,7 +461,7 @@
 
 .nl-arrow {
     font-size: 1.25rem;
-    color: #7a1f1f;
+    color: #ff4000;
     flex-shrink: 0;
 }
 
@@ -490,8 +490,8 @@
 
 .nl-viewmore {
     background: #f7dede;
-    color: #7a1f1f;
-    font-weight: 700;
+    color: #ff4000;
+    font-weight: 600;
     border: 1px solid #f0c6c6;
     border-radius: .5rem;
     padding: .6rem 1rem;
@@ -500,9 +500,9 @@
 }
 
 .nl-viewmore:hover {
-    background: #7a1f1f;
+    background: #ff4000;
     color: #fff;
-    border-color: #7a1f1f;
+    border-color: #ff4000;
 }
 
 
